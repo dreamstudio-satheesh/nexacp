@@ -566,11 +566,11 @@ const message = {
         revokeAuthorization: '権限を取り消す',
         revokeAuthorizationHelper: 'ユーザー {0} のデータベース {1} へのアクセス権を取り消しますか？',
         supplementPassword: 'パスワードを登録',
-        supplementPasswordHelper: '既存のパスワードを 1Panel に保存するだけで、MySQL のパスワードは変更しません。',
+        supplementPasswordHelper: '既存のパスワードを NexaCP に保存するだけで、MySQL のパスワードは変更しません。',
         pgBindHelper:
             'この操作は、新しいユーザーを作成し、ターゲットデータベースにバインドするために使用されます。現在、データベースに既存のユーザーを選択することはサポートされていません。',
         pgSuperUser: 'スーパーユーザー',
-        loadFromRemoteHelper: 'サーバー上のデータベース、ユーザー、権限情報を 1Panel に同期します。続行しますか？',
+        loadFromRemoteHelper: 'サーバー上のデータベース、ユーザー、権限情報を NexaCP に同期します。続行しますか？',
         passwordHelper: '取得できません、クリックして修正',
         remote: 'リモート',
         remoteDB: 'リモートサーバー|リモートサーバー',
@@ -932,7 +932,7 @@ const message = {
             ollama_doc: 'Ollama の公式ウェブサイトを訪れて、さらに多くのモデルを検索して見つけることができます。',
             container_conn_helper: 'コンテナ間のアクセスまたは接続にこのアドレスを使用',
             ollama_sync: 'Ollamaモデルの同期中に、以下のモデルが存在しないことが判明しました。削除しますか？',
-            from_remote: 'このモデルは1Panelを介してダウンロードされておらず、関連するプルログはありません。',
+            from_remote: 'このモデルはNexaCPを介してダウンロードされておらず、関連するプルログはありません。',
             no_logs: 'このモデルのプルログは削除されており、関連するログを表示できません。',
             vllmVersionHelper: 'FusionXpark GB 10 サーバーでは -cu130 バージョンを選択してください。',
             vllmCommandPortHelper:
@@ -1501,7 +1501,7 @@ const message = {
             protocolVersionHelper:
                 'ステートレス Streamable HTTP で、下流の stdio MCP Server を自動初期化する場合にのみ使用します',
             gatewayArgsHelper:
-                '引数は supergateway の起動コマンドに追加されます。1Panel が管理する転送方式、ポート、パス、プロトコルの引数は変更できません',
+                '引数は supergateway の起動コマンドに追加されます。NexaCP が管理する転送方式、ポート、パス、プロトコルの引数は変更できません',
             testConnection: '接続テスト',
             connectionSuccess: '接続に成功しました',
             connectionFailed: '接続に失敗しました',
@@ -1538,7 +1538,7 @@ const message = {
         operatorAppHelper:
             '「{0}」操作は次のコンテナで実行され、実行中のサービスに影響を与える可能性があります。続けたいですか？',
         containerDeleteHelper:
-            'コンテナがアプリストアから作成されたことを検出しました。コンテナを削除しても、1Panel から完全には削除されません。完全に削除するには、アプリストアの「インストール済み」または「実行環境」などのメニューに移動して操作してください。続行しますか？',
+            'コンテナがアプリストアから作成されたことを検出しました。コンテナを削除しても、NexaCP から完全には削除されません。完全に削除するには、アプリストアの「インストール済み」または「実行環境」などのメニューに移動して操作してください。続行しますか？',
         start: '始める',
         stop: '停止',
         restart: '再起動',
@@ -1769,7 +1769,7 @@ const message = {
         composeDownHelper:
             'これにより、{0}構成の下のすべてのコンテナとネットワークが停止して削除されます。続けたいですか？',
         composeEnvHelper2:
-            'このオーケストレーションは1Panelアプリストアで作成されました。インストール済みアプリケーションで環境変数を変更してください。',
+            'このオーケストレーションはNexaCPアプリストアで作成されました。インストール済みアプリケーションで環境変数を変更してください。',
         composeContentPlaceholder: 'ここに docker-compose ファイルの内容を記述または貼り付けてください',
         setting: '設定|設定',
         restartHelper: '設定変更を有効にするには Docker サービスの再起動が必要です',
@@ -1960,7 +1960,7 @@ const message = {
             remoteLibrary: 'リモートスクリプトライブラリ',
         },
         nextTime: '次の5回の実行',
-        logHelper1: '1. 1Panel システムログ',
+        logHelper1: '1. NexaCP システムログ',
         backupContent: 'バックアップ内容',
         cronSpecRule2: '実行周期の形式が不正です。確認して再試行してください。',
         perMonthHelper: '毎月 {0} 日 {1}:{2} に実行',
@@ -2603,7 +2603,7 @@ const message = {
         previewTruncated: 'ファイルが大きすぎるため、末尾の内容のみ表示しています',
         previewEmpty: 'ファイルが空であるか、テキストファイルではありません',
         previewLargeFile: 'プレビュー',
-        panelInstallDir: '1Panelインストールディレクトリは削除できません',
+        panelInstallDir: 'NexaCPインストールディレクトリは削除できません',
         wgetTask: 'ダウンロードタスク',
         stopWgetConfirm: 'このダウンロードタスクを停止しますか？',
         existFileTitle: '同名ファイルの警告',
@@ -2914,7 +2914,7 @@ const message = {
             '以下の IP/CIDR からのリクエストのみが Forwarded/X-Forwarded-Proto を HTTPS 判定に使います',
         passkeyNotSupported: 'ブラウザまたは環境がパスキー非対応です。ドメインと HTTPS を確認してください',
         passkeyPrereqTitle: 'Passkey を使用するには次の前提条件が必要です',
-        passkeyPrereqBindDomain: '1Panel のドメインバインド設定済み',
+        passkeyPrereqBindDomain: 'NexaCP のドメインバインド設定済み',
         passkeyPrereqHttps: 'HTTPS で安全にアクセス済み',
         passkeyPrereqBrowser: '現在の環境が Passkey（WebAuthn + プラットフォーム認証器）に対応',
         passkeyPrereqBrowserDetailWebAuthnUnavailable:
@@ -3202,7 +3202,7 @@ const message = {
         import: 'インポート',
         securityWarningTitle: 'クラック版または出所不明のライセンスを使用しないでください。',
         securityWarningContent:
-            '1Panel はシステム管理者権限を持つユーザーで実行する必要があります。非公式ライセンスや改ざんされたバージョンは、サーバーの制御不能、データ漏えいなどの重大なセキュリティリスクを引き起こす可能性があります。ライセンスとインストールパッケージは FIT2CLOUD 公式チャネルから入手してください。',
+            'NexaCP はシステム管理者権限を持つユーザーで実行する必要があります。非公式ライセンスや改ざんされたバージョンは、サーバーの制御不能、データ漏えいなどの重大なセキュリティリスクを引き起こす可能性があります。ライセンスとインストールパッケージは FIT2CLOUD 公式チャネルから入手してください。',
         importHelper: 'ここでライセンスファイルをクリックまたはドラッグしてください',
         licenseRequiredTip:
             'まだライセンスがインポートされていません。デバイス ID をコピーしてライセンスを取得し、インポートしてからログインしてください。',
@@ -3247,14 +3247,14 @@ const message = {
             '商用版にアップグレードすると、Web サイトのリアルタイム状態、訪問者トレンド、流入元、リクエストログなどを確認できます。',
         alert: '商用版にアップグレードすると、SMS アラートの受信やアラートログの確認が可能になります。',
         app: '商用版にアップグレードすると、モバイルアプリでサービス情報や異常監視を確認できます。',
-        node: '商用版にアップグレードすると、1Panel で複数の Linux サーバーを管理できます。',
+        node: '商用版にアップグレードすると、NexaCP で複数の Linux サーバーを管理できます。',
         nodeApp:
             '商用版にアップグレードすると、ノードを手動で切り替えずにマルチノードアプリのバージョンを一括アップグレードできます。',
         nodeDashboard:
             '商用版にアップグレードすると、マルチノードのアプリ、Web サイト、データベース、スケジュールタスクを一元管理できます。',
         fileExchange: '商用版にアップグレードすると、複数サーバー間でファイルをすばやく転送できます。',
         cluster: '商用版にアップグレードすると、MySQL/Postgres/Redis のプライマリ/レプリカ構成を管理できます。',
-        vllm: '商用版にアップグレードすると、1Panel で vLLM サービスのデプロイ、設定、ライフサイクル操作、タスク追跡を一元管理できます。',
+        vllm: '商用版にアップグレードすると、NexaCP で vLLM サービスのデプロイ、設定、ライフサイクル操作、タスク追跡を一元管理できます。',
         'model-downloader':
             '商用版にアップグレードすると、HuggingFace、ModelScope、または互換ミラーからローカルモデルファイルを検索、ダウンロード、管理できます。モデルディレクトリとダウンロードタスクを一元管理できます。',
         exceptionalHelper:
@@ -4005,7 +4005,7 @@ const message = {
         execShell: '認定リクエスト後にスクリプトを実行します。',
         shell: 'スクリプトコンテンツ',
         shellHelper:
-            'スクリプトのデフォルトの実行ディレクトリは、1Panelインストールディレクトリです。証明書がローカルディレクトリにプッシュされた場合、実行ディレクトリは証明書プッシュディレクトリになります。デフォルトの実行タイムアウトは30分です。',
+            'スクリプトのデフォルトの実行ディレクトリは、NexaCPインストールディレクトリです。証明書がローカルディレクトリにプッシュされた場合、実行ディレクトリは証明書プッシュディレクトリになります。デフォルトの実行タイムアウトは30分です。',
         customAcme: 'カスタム ACME サービス',
         customAcmeURL: 'ACME サービス URL',
         baiduCloud: '百度クラウド',
@@ -4258,7 +4258,7 @@ const message = {
             dir: 'ディレクトリ',
             numprocs: '番号。プロセスの',
             initWarn:
-                'これにより、メイン構成ファイルの[[include] [include]セクションの「ファイル」値が変更されます。他の構成ファイルのディレクトリは、「{1Panel Installation Directory} /1Panel/tools/supervisord/supervisor.d/」になります。',
+                'これにより、メイン構成ファイルの[[include] [include]セクションの「ファイル」値が変更されます。他の構成ファイルのディレクトリは、「{NexaCP Installation Directory} /NexaCP/tools/supervisord/supervisor.d/」になります。',
             operatorHelper: '操作{1}は{0}で実行されます、続行しますか？',
             uptime: '実行時間',
             notStartWarn: 'スーパーバイザーは開始されません。最初に開始します。',
@@ -5026,7 +5026,7 @@ const message = {
                     clientSecret: 'Client Secret',
                     clockSkew: 'トークン時刻の許容差',
                     clockSkewHelper:
-                        'ID プロバイダーと 1Panel のわずかな時刻差を許容します。通常は 60 秒のままにしてください。',
+                        'ID プロバイダーと NexaCP のわずかな時刻差を許容します。通常は 60 秒のままにしてください。',
                     clockSkewRequired: 'トークン時刻の許容差を入力してください。',
                     compatibilityMode: '互換モード',
                     compatibilityModeHelper:
@@ -5141,13 +5141,13 @@ const message = {
                     nameClaimHelper: 'ユーザー名を含むフィールド名を入力してください（例：preferred_username）。',
                     nameClaimRequired: 'ユーザー名 Claim を入力してください。',
                     nameConflict: '名前の競合ポリシー',
-                    panelURL: '1Panel 公開 URL',
+                    panelURL: 'NexaCP 公開 URL',
                     panelURLHTTPWarning:
                         'HTTP は認可応答を保護しません。プロバイダーが許可した隔離されたプライベート環境でのみ使用してください。',
                     panelURLHelper:
-                        'ユーザーが 1Panel へアクセスするアドレスを入力してください。コールバック URL の生成に使用します。',
+                        'ユーザーが NexaCP へアクセスするアドレスを入力してください。コールバック URL の生成に使用します。',
                     panelURLInvalid: 'スキーム、ホスト、およびオプションのポートのみを含むオリジンを入力します。',
-                    panelURLRequired: '1Panel の公開 URL を入力してください。',
+                    panelURLRequired: 'NexaCP の公開 URL を入力してください。',
                     pkceDisabled: '無効（互換性のみ）',
                     pkceDisabledWarning: 'PKCE を無効にすると、認証コードの傍受に対する保護が低下します。',
                     pkceHelper: 'S256 を優先します。 plain チャレンジ メソッドは決して提供されません。',
@@ -5203,7 +5203,7 @@ const message = {
                     signingKeySourceHelper: 'JWKS を推奨します。静的公開キーは自動的にローテーションできません。',
                     signingKeyStatic: '静的 JWK または PEM 公開キー',
                     standardDiscovery: '標準 OIDC Discovery',
-                    standardDiscoveryDesc: '1Panel はエンドポイントと機能を検出し、生のドキュメントは保存しません。',
+                    standardDiscoveryDesc: 'NexaCP はエンドポイントと機能を検出し、生のドキュメントは保存しません。',
                     standardMode: '標準モード',
                     standardModeHelper: 'エンドポイント、署名機能、Issuer の PKCE サポートを確認します。',
                     standardProtocolPolicy: '標準プロトコル ポリシー',
@@ -5323,7 +5323,7 @@ const message = {
                     metadataXMLPlaceholder: '<EntityDescriptor>...</EntityDescriptor> を貼り付け',
                     nameAttribute: 'ユーザー名属性',
                     nameAttributeHelper:
-                        '検証済みの SAML Assertion からこの属性を読み取り、1Panel のユーザー名にマッピングします。',
+                        '検証済みの SAML Assertion からこの属性を読み取り、NexaCP のユーザー名にマッピングします。',
                     nameAttributePlaceholder: '例: uid、username、account',
                     nameAttributeRequired: 'ユーザー名属性を入力してください。',
                     notConfigured: '未設定',
@@ -5358,7 +5358,7 @@ const message = {
                     spPrivateKeyHelper:
                         'AuthnRequest とログアウトメッセージの署名に使用します。保存時に暗号化され、表示されることはありません。',
                     syncLogout: '同期ログアウト',
-                    syncLogoutHelper: '1Panel または IdP の一方からログアウトすると、もう一方からもログアウトします。',
+                    syncLogoutHelper: 'NexaCP または IdP の一方からログアウトすると、もう一方からもログアウトします。',
                     testBeforeBrowserTest: 'ブラウザのログイン テストを開始する前に、現在の設定をテストします。',
                     testBeforeEnable: '機密変更を有効にするか保存する前に、現在の設定をテストしてください。',
                     testConfiguration: '設定をテスト',
@@ -5388,14 +5388,14 @@ const message = {
                     passwordSaved: '保存したパスワードを保持するには空白のままにしてください',
                     userSearch: 'ユーザー検索',
                     userSearchDesc:
-                        'ユーザー検索ベースとフィルターを設定し、1Panel name として使用される LDAP 属性をマップします。',
+                        'ユーザー検索ベースとフィルターを設定し、NexaCP name として使用される LDAP 属性をマップします。',
                     userFilter: 'ユーザーフィルター',
                     userFilterTooltip:
                         '%(user)s をエスケープされたユーザー名に置き換えるか、ディレクトリ全体を読み取る場合は * に置き換えます。',
                     userFilterHelper: 'ユーザー名は、LDAP フィルターに挿入される前にエスケープされます。',
                     attributeMap: '属性マッピング',
-                    attributeMapTooltip: '1Panel name フィールドから LDAP 属性への JSON マッピング。',
-                    attributeMapHelper: '1Panel name フィールドにマップされる LDAP 属性を設定します。',
+                    attributeMapTooltip: 'NexaCP name フィールドから LDAP 属性への JSON マッピング。',
+                    attributeMapHelper: 'NexaCP name フィールドにマップされる LDAP 属性を設定します。',
                     advanced: '詳細設定',
                     advancedDesc: 'TLS および LDAP クエリ ページングを構成します。',
                     strictSync: '厳密な同期',
@@ -5435,7 +5435,7 @@ const message = {
                     sync: {
                         title: 'スケジュールされた同期',
                         description:
-                            'スケジュールに従って完全な LDAP ディレクトリを読み取り、インポートされた LDAP ユーザーを 1Panel に維持します。',
+                            'スケジュールに従って完全な LDAP ディレクトリを読み取り、インポートされた LDAP ユーザーを NexaCP に維持します。',
                         enable: 'スケジュールを有効にする',
                         enableHelper: '無効にすると、自動実行が停止します。手動同期は引き続き利用可能です。',
                         schedule: 'スケジュール',
@@ -5493,7 +5493,7 @@ const message = {
                     },
                     testLoginTitle: 'AD/LDAP ログインテスト',
                     testLoginDesc:
-                        '認証のみをテストするために、AD/LDAP ユーザー資格情報をバインドします。 1Panel セッションは作成されません。',
+                        '認証のみをテストするために、AD/LDAP ユーザー資格情報をバインドします。 NexaCP セッションは作成されません。',
                     ldapUsername: 'LDAP ユーザー名',
                     usernameRequired: 'LDAP ユーザー名を入力します。',
                     startTest: 'テストの開始',
@@ -6079,7 +6079,7 @@ const message = {
             tamperContent4:
                 'ファイルのアクセスおよび操作ログを記録し、後の監査および分析に使用、また潜在的なセキュリティ脅威を特定。',
             settingTitle1: 'カスタムウェルカムメッセージ',
-            settingContent1: '1Panelのログインページにカスタムウェルカムメッセージを設定。',
+            settingContent1: 'NexaCPのログインページにカスタムウェルカムメッセージを設定。',
             settingTitle2: 'カスタムロゴ',
             settingContent2: 'ブランド名やその他のテキストを含むロゴ画像をアップロードできる。',
             settingTitle3: 'カスタムウェブサイトアイコン',
@@ -6134,7 +6134,7 @@ const message = {
             nodeAppTitle1: 'アプリケーションアップグレード管理',
             nodeAppContent1: 'マルチノードアプリケーションの更新状況を統一監視、ワンクリックアップグレードをサポート',
             appTitle1: '柔軟なパネル管理',
-            appContent1: 'いつでもどこでも1Panelサーバーを簡単に管理できます。',
+            appContent1: 'いつでもどこでもNexaCPサーバーを簡単に管理できます。',
             appTitle2: '包括的なサービス情報',
             appContent2:
                 'モバイル端末でアプリケーション、ウェブサイト、Docker、データベースなどの基本的な管理を行い、アプリやウェブサイトの迅速な作成をサポートします。',
@@ -6164,7 +6164,7 @@ const message = {
                 'ローカルモデルディレクトリを一元管理し、パス、サイズ、日時の確認と不要なモデルファイルの削除を行えます。',
             vllmTitle1: '一元管理',
             vllmContent1:
-                '分散した vLLM サービスを 1Panel に統合し、インスタンス、バージョン、状態、実行ディレクトリを一元的に確認できます。',
+                '分散した vLLM サービスを NexaCP に統合し、インスタンス、バージョン、状態、実行ディレクトリを一元的に確認できます。',
             vllmTitle2: '高速デプロイ',
             vllmContent2:
                 'ビジュアルフォームでバージョン選択、モデルディレクトリマウント、起動パラメータ設定を完了し、手動構成コストを削減します。',
@@ -6223,7 +6223,7 @@ const message = {
             panelItem: 'パネル管理',
             addPanel: 'パネル追加',
             addPanelHelper: 'パネルを追加すると、[概要 - パネル] から対象のパネルにすばやくアクセスできます。',
-            panel: '1Panel パネル',
+            panel: 'NexaCP パネル',
             others: 'その他のパネル',
             addNode: 'ノードを追加',
             connInfo: '接続情報',
@@ -6262,14 +6262,14 @@ const message = {
             checkService: 'ノードの既存サービス情報を確認',
             checkPort: 'ノードポート到達性を確認',
             panelExist:
-                'このノードで1Panel V1サービスが実行中です。追加前に移行スクリプトでV2へアップグレードしてください。',
+                'このノードでNexaCP V1サービスが実行中です。追加前に移行スクリプトでV2へアップグレードしてください。',
             coreExist:
                 '現在のノードはマスターノードとして有効化済みのため、直接スレーブノードとして追加できません。追加する前にまずスレーブノードにダウングレードしてください。詳細はドキュメントを参照してください。',
             agentExist:
                 'このノードに1panel-agentが既にインストールされています。続行すると既存データを保持し、1panel-agentサービスのみを置換します。',
             agentNotExist:
                 'このノードに1panel-agentがインストールされていないため、ノード情報を直接編集できません。一度削除してから再度追加してください。',
-            oldDataExist: 'このノードに1Panel V2の過去データが検出されました。以下の情報で現在の設定を上書きします:',
+            oldDataExist: 'このノードにNexaCP V2の過去データが検出されました。以下の情報で現在の設定を上書きします:',
             errLicense: 'このノードに紐づけられたライセンスが利用できません。確認して再試行してください！',
             errNodePort:
                 'ノードポート[ {0} ]にアクセスできないことが検出されました。ファイアウォールまたはセキュリティグループでこのポートが開放されているか確認してください。',
@@ -6289,7 +6289,7 @@ const message = {
             operatePanelHelper: '以下のパネルに対して {0} 操作を実行します。続行しますか？',
             forceDeleteHelper: '強制削除はノード削除エラーを無視し、データベースメタデータを削除します',
             uninstall: 'ノードデータを削除',
-            uninstallHelper: 'ノードに関連するすべての1Panelデータが削除されます。慎重に選択してください！',
+            uninstallHelper: 'ノードに関連するすべてのNexaCPデータが削除されます。慎重に選択してください！',
             baseDir: 'インストールディレクトリ',
             baseDirHelper: 'インストールディレクトリが空の場合、デフォルトで/optディレクトリにインストールされます',
             nodePort: 'ノードポート',

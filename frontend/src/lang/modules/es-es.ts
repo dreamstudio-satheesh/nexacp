@@ -567,12 +567,12 @@ const message = {
         revokeAuthorization: 'Revocar autorización',
         revokeAuthorizationHelper: '¿Revocar el acceso del usuario {0} a la base de datos {1}?',
         supplementPassword: 'Añadir contraseña',
-        supplementPasswordHelper: 'Solo guarda la contraseña existente en 1Panel; no cambia la contraseña en MySQL.',
+        supplementPasswordHelper: 'Solo guarda la contraseña existente en NexaCP; no cambia la contraseña en MySQL.',
         pgBindHelper:
             'Esta operación se utiliza para crear un nuevo usuario y vincularlo a la base de datos destino. Actualmente no se admite seleccionar usuarios ya existentes en la base de datos.',
         pgSuperUser: 'Superusuario',
         loadFromRemoteHelper:
-            'Esto sincronizará las bases de datos, los usuarios y las autorizaciones del servidor con 1Panel. ¿Desea continuar?',
+            'Esto sincronizará las bases de datos, los usuarios y las autorizaciones del servidor con NexaCP. ¿Desea continuar?',
         passwordHelper: 'No se puede obtener, haga clic para modificar',
         remote: 'Remoto',
         remoteDB: 'Servidor remoto | Servidores remotos',
@@ -945,7 +945,7 @@ const message = {
             container_conn_helper: 'Utilice esta dirección para el acceso o conexión entre contenedores',
             ollama_sync:
                 'Al sincronizar modelos de Ollama, se detectaron los siguientes modelos que no existen. ¿Desea eliminarlos?',
-            from_remote: 'Este modelo no fue descargado vía 1Panel, no hay registros de descarga relacionados.',
+            from_remote: 'Este modelo no fue descargado vía NexaCP, no hay registros de descarga relacionados.',
             no_logs: 'Los registros de descarga de este modelo han sido eliminados y no se pueden consultar.',
             vllmVersionHelper: 'Para servidores FusionXpark GB 10, seleccione la versión -cu130.',
             vllmCommandPortHelper:
@@ -1523,7 +1523,7 @@ const message = {
             protocolVersionHelper:
                 'Solo se utiliza con Streamable HTTP sin estado para inicializar automáticamente el servidor MCP stdio descendente',
             gatewayArgsHelper:
-                'Los argumentos se añaden al comando supergateway. No se pueden cambiar los argumentos de transporte, puerto, ruta y protocolo gestionados por 1Panel',
+                'Los argumentos se añaden al comando supergateway. No se pueden cambiar los argumentos de transporte, puerto, ruta y protocolo gestionados por NexaCP',
             testConnection: 'Probar conexión',
             connectionSuccess: 'Conexión correcta',
             connectionFailed: 'Error de conexión',
@@ -1563,7 +1563,7 @@ const message = {
         operatorAppHelper:
             'La operación "{0}" se realizará en los siguientes contenedores y puede afectar los servicios en ejecución. ¿Desea continuar?',
         containerDeleteHelper:
-            "Se detectó que el contenedor proviene de la Tienda de Aplicaciones. Eliminar el contenedor no lo eliminará completamente de 1Panel. Para eliminarlo por completo, vaya a la Tienda de Aplicaciones -> menús 'Instalado' o 'Entorno de Ejecución'. ¿Continuar?",
+            "Se detectó que el contenedor proviene de la Tienda de Aplicaciones. Eliminar el contenedor no lo eliminará completamente de NexaCP. Para eliminarlo por completo, vaya a la Tienda de Aplicaciones -> menús 'Instalado' o 'Entorno de Ejecución'. ¿Continuar?",
         start: 'Iniciar',
         stop: 'Detener',
         restart: 'Reiniciar',
@@ -1789,7 +1789,7 @@ const message = {
         composeNamePriorityHelper:
             'Prioridad del nombre del proyecto: nombre especificado en la configuración de Docker Compose > directorio padre del archivo > nombre indicado aquí.',
         composeHelper:
-            'La composición creada mediante el editor o plantilla de 1Panel se guardará en el directorio {0}/docker/compose.',
+            'La composición creada mediante el editor o plantilla de NexaCP se guardará en el directorio {0}/docker/compose.',
         deleteFile: 'Eliminar archivo',
         deleteComposeHelper:
             'Elimina todos los archivos relacionados con la composición de contenedores, incluidos los archivos de configuración y los persistentes. ¡Proceda con precaución!',
@@ -1804,12 +1804,12 @@ const message = {
         exited: 'Finalizado',
         running: 'En ejecución ({0}/{1})',
         composeDetailHelper:
-            'La composición fue creada externamente a 1Panel. Las operaciones de inicio y detención no son compatibles.',
+            'La composición fue creada externamente a NexaCP. Las operaciones de inicio y detención no son compatibles.',
         composeOperatorHelper: 'La operación {1} se realizará en {0}. ¿Desea continuar?',
         composeDownHelper:
             'Esto detendrá y eliminará todos los contenedores y redes bajo la composición {0}. ¿Desea continuar?',
         composeEnvHelper2:
-            'Esta orquestación fue creada por la Tienda de Aplicaciones 1Panel. Modifique las variables de entorno en las aplicaciones instaladas.',
+            'Esta orquestación fue creada por la Tienda de Aplicaciones NexaCP. Modifique las variables de entorno en las aplicaciones instaladas.',
         composeContentPlaceholder: 'Escriba o pegue el contenido de su archivo docker-compose aquí',
         setting: 'Configuración | Configuraciones',
         goSetting: 'Ir a configuración',
@@ -1983,7 +1983,7 @@ const message = {
         noLogs: 'Aún no hay salida de tareas...',
         errPath: '¡Error en la ruta de respaldo [{0}], no se puede descargar!',
         cutWebsiteLog: 'Rotación de logs del sitio',
-        cutWebsiteLogHelper: 'Los archivos de log rotados se respaldarán en el directorio de respaldos de 1Panel.',
+        cutWebsiteLogHelper: 'Los archivos de log rotados se respaldarán en el directorio de respaldos de NexaCP.',
         syncIpGroup: 'Sincronizar grupos de IP de WAF',
         syncIpGroupHelper: 'Sincroniza grupos de IP remotos usados en las listas negras/blancas de WAF',
         requestExpirationTime: 'Tiempo de expiración de solicitud de subida (Horas)',
@@ -2013,7 +2013,7 @@ const message = {
             syncHelper:
                 'Se va a sincronizar la librería de scripts del sistema. Solo afecta a los scripts del sistema. ¿Desea continuar?',
         },
-        logHelper1: '1. Registro del sistema de 1Panel',
+        logHelper1: '1. Registro del sistema de NexaCP',
         cleanLog: 'Limpieza automática de logs',
         cleanLogscope: 'Retención de logs',
     },
@@ -2660,7 +2660,7 @@ const message = {
         previewTruncated: 'El archivo es demasiado grande, solo se muestra la última parte',
         previewEmpty: 'El archivo está vacío o no es un archivo de texto',
         previewLargeFile: 'Vista previa',
-        panelInstallDir: 'El directorio de instalación de 1Panel no puede eliminarse',
+        panelInstallDir: 'El directorio de instalación de NexaCP no puede eliminarse',
         wgetTask: 'Tarea de descarga',
         stopWgetConfirm: '¿Confirmar que desea detener esta tarea de descarga?',
         existFileTitle: 'Archivo con el mismo nombre',
@@ -2882,7 +2882,7 @@ const message = {
         timeZone: 'Zona horaria',
         timeZoneChangeHelper: 'Cambiar la zona horaria requiere reiniciar el servicio. ¿Deseas continuar?',
         timeZoneHelper:
-            'La modificación de zona horaria depende del servicio system timedatectl. Tomará efecto después de reiniciar el servicio 1Panel.',
+            'La modificación de zona horaria depende del servicio system timedatectl. Tomará efecto después de reiniciar el servicio NexaCP.',
         timeZoneCN: 'Pekín',
         timeZoneAM: 'Los Ángeles',
         timeZoneNY: 'Nueva York',
@@ -3008,7 +3008,7 @@ const message = {
             'Solo las solicitudes desde estas IP/CIDR confiarán en Forwarded y X-Forwarded-Proto para detectar HTTPS',
         passkeyNotSupported: 'El navegador o entorno actual no admite passkeys',
         passkeyPrereqTitle: 'Se requieren los siguientes requisitos previos para Passkey',
-        passkeyPrereqBindDomain: 'Vinculación de dominio de 1Panel configurada',
+        passkeyPrereqBindDomain: 'Vinculación de dominio de NexaCP configurada',
         passkeyPrereqHttps: 'Acceso seguro mediante HTTPS',
         passkeyPrereqBrowser: 'El entorno admite Passkey (WebAuthn + autenticador de plataforma)',
         passkeyPrereqBrowserDetailWebAuthnUnavailable:
@@ -3060,10 +3060,10 @@ const message = {
         panelSSL: 'SSL del panel',
         unBindDomainHelper:
             'La acción de desvincular un dominio puede provocar inseguridad en el sistema. ¿Deseas continuar?',
-        bindDomainHelper: 'Tras vincular el dominio, solo ese dominio podrá acceder al servicio de 1Panel.',
+        bindDomainHelper: 'Tras vincular el dominio, solo ese dominio podrá acceder al servicio de NexaCP.',
         bindDomainHelper1: 'Déjalo en blanco para desactivar la vinculación de dominio.',
         bindDomainWarning:
-            'Tras la vinculación del dominio, se cerrará la sesión y solo se podrá acceder al servicio 1Panel mediante el dominio especificado. ¿Deseas continuar?',
+            'Tras la vinculación del dominio, se cerrará la sesión y solo se podrá acceder al servicio NexaCP mediante el dominio especificado. ¿Deseas continuar?',
         allowIPs: 'IP autorizada',
         unAllowIPs: 'IP no autorizada',
         unAllowIPsWarning:
@@ -3078,7 +3078,7 @@ const message = {
         secret: 'Secreto',
         mfaInterval: 'Intervalo de refresco',
         mfaTitleHelper:
-            'El título se usa para distinguir diferentes hosts de 1Panel. Tras modificarlo, vuelve a escanear o añade la clave secreta manualmente.',
+            'El título se usa para distinguir diferentes hosts de NexaCP. Tras modificarlo, vuelve a escanear o añade la clave secreta manualmente.',
         mfaIntervalHelper:
             'Tras modificar el intervalo de refresco, vuelve a escanear o añade la clave secreta manualmente.\nAlgunas apps de autenticación solo admiten un intervalo de 30 segundos (por ejemplo, Google/Microsoft Authenticator).',
         mfaAlert:
@@ -3165,14 +3165,14 @@ const message = {
         ignoreRule: 'Regla de exclusión',
         editIgnoreRule: '@:commons.button.edit @.lower:setting.ignoreRule',
         ignoreHelper:
-            'Esta regla se usará para comprimir y respaldar el directorio de datos de 1Panel al crear la instantánea. Por defecto, se ignoran los archivos de socket.',
+            'Esta regla se usará para comprimir y respaldar el directorio de datos de NexaCP al crear la instantánea. Por defecto, se ignoran los archivos de socket.',
         ignoreHelper1: 'Una por línea. Por ejemplo,\n*.log\n/opt/1panel/cache',
-        panelInfo: 'Escribir información básica de 1Panel',
-        panelBin: 'Respaldar archivos del sistema 1Panel',
+        panelInfo: 'Escribir información básica de NexaCP',
+        panelBin: 'Respaldar archivos del sistema NexaCP',
         daemonJson: 'Respaldar archivo de configuración de Docker',
-        appData: 'Respaldar aplicaciones instaladas de 1Panel',
-        panelData: 'Respaldar directorio de datos de 1Panel',
-        backupData: 'Respaldar directorio local de respaldo de 1Panel',
+        appData: 'Respaldar aplicaciones instaladas de NexaCP',
+        panelData: 'Respaldar directorio de datos de NexaCP',
+        backupData: 'Respaldar directorio local de respaldo de NexaCP',
         compress: 'Crear archivo de instantánea',
         upload: 'Subir archivo de instantánea',
         recoverDetail: 'Detalle de recuperación',
@@ -3185,7 +3185,7 @@ const message = {
             'Se detectó espacio insuficiente en disco, por favor verifica o libera espacio e inténtalo de nuevo.',
         recoverHelper:
             'Iniciando recuperación desde la instantánea {0}, confirma la siguiente información antes de continuar:',
-        recoverHelper1: 'La recuperación requiere reiniciar Docker y los servicios de 1Panel',
+        recoverHelper1: 'La recuperación requiere reiniciar Docker y los servicios de NexaCP',
         recoverHelper2:
             'Asegúrate de que haya suficiente espacio en disco en el servidor (Tamaño del archivo de instantánea: {0}, Espacio disponible: {1})',
         recoverHelper3:
@@ -3194,10 +3194,10 @@ const message = {
             'Esta operación solo revierte el nodo principal. Si existen nodos secundarios actualizados, reviértelos primero antes de continuar.',
         rollback: 'Reversión',
         rollbackHelper:
-            'Revertir esta recuperación reemplazará todos los archivos de esta recuperación y puede requerir reiniciar Docker y los servicios de 1Panel. ¿Deseas continuar?',
+            'Revertir esta recuperación reemplazará todos los archivos de esta recuperación y puede requerir reiniciar Docker y los servicios de NexaCP. ¿Deseas continuar?',
         upgradeRecord: 'Registro de actualización',
         upgrading: ' Actualizando, por favor espera...',
-        upgradeHelper: 'La actualización requiere reiniciar el servicio 1Panel. ¿Deseas continuar?',
+        upgradeHelper: 'La actualización requiere reiniciar el servicio NexaCP. ¿Deseas continuar?',
         noUpgrade: 'Actualmente es la última versión',
         versionHelper:
             'Reglas de nombre: [versión mayor].[versión funcional].[versión de corrección de errores], como se muestra en el siguiente ejemplo:',
@@ -3279,7 +3279,7 @@ const message = {
         importLicense: 'Importar licencia',
         securityWarningTitle: 'No uses licencias crackeadas ni de origen desconocido.',
         securityWarningContent:
-            '1Panel debe ejecutarse con un usuario con permisos de administración del sistema. Las licencias no oficiales o las versiones manipuladas pueden causar pérdida de control del servidor, filtraciones de datos y otros riesgos graves de seguridad. Obtén licencias e instaladores solo desde canales oficiales de FIT2CLOUD.',
+            'NexaCP debe ejecutarse con un usuario con permisos de administración del sistema. Las licencias no oficiales o las versiones manipuladas pueden causar pérdida de control del servidor, filtraciones de datos y otros riesgos graves de seguridad. Obtén licencias e instaladores solo desde canales oficiales de FIT2CLOUD.',
         importHelper: 'Haga clic o arrastre el archivo de licencia aquí',
         licenseRequiredTip:
             'La licencia aún no se ha importado. Copie el ID del dispositivo, obtenga la licencia e impórtela antes de iniciar sesión.',
@@ -3323,7 +3323,7 @@ const message = {
         setting: 'Actualizar a la edición comercial permite personalizar logo, mensaje de bienvenida y más.',
         monitor: 'La edición comercial permite ver estado web en tiempo real, tendencias, logs, etc.',
         alert: 'La edición comercial permite recibir alertas SMS y ver logs, control total de eventos clave.',
-        node: 'Actualizar a la edición comercial permite administrar varios servidores Linux con 1Panel.',
+        node: 'Actualizar a la edición comercial permite administrar varios servidores Linux con NexaCP.',
         nodeApp:
             'Actualizar a la edición comercial permite actualizar versiones de aplicaciones multinodo sin cambiar de nodo manualmente.',
         nodeDashboard:
@@ -3332,14 +3332,14 @@ const message = {
         app: 'La edición comercial permite ver información de servicio, monitoreo, etc. vía app móvil.',
         cluster:
             'Actualizar a la edición comercial permite gestionar clústeres primario-réplica de MySQL/Postgres/Redis.',
-        vllm: 'Actualiza a la edición comercial para gestionar servicios vLLM en 1Panel con despliegue, configuración, operaciones del ciclo de vida y seguimiento de tareas centralizados.',
+        vllm: 'Actualiza a la edición comercial para gestionar servicios vLLM en NexaCP con despliegue, configuración, operaciones del ciclo de vida y seguimiento de tareas centralizados.',
         'model-downloader':
             'Actualiza a la edición comercial para buscar, descargar y gestionar archivos de modelos locales desde HuggingFace, ModelScope o espejos compatibles, con directorios de modelos y tareas de descarga centralizados.',
         offLine: 'Sin conexión',
     },
     clean: {
         scan: 'Iniciar escaneo',
-        scanHelper: 'Limpie fácilmente archivos basura generados por 1Panel',
+        scanHelper: 'Limpie fácilmente archivos basura generados por NexaCP',
         clean: 'Limpiar ahora',
         reScan: 'Volver a escanear',
         cleanHelper:
@@ -4056,7 +4056,7 @@ const message = {
         execShell: 'Ejecutar script tras solicitud de certificado.',
         shell: 'Contenido del script',
         shellHelper:
-            'Por defecto, el script se ejecuta en el directorio de instalación de 1Panel. Si se guarda el certificado, será en ese directorio. Timeout: 30 minutos.',
+            'Por defecto, el script se ejecuta en el directorio de instalación de NexaCP. Si se guarda el certificado, será en ese directorio. Timeout: 30 minutos.',
         customAcme: 'Servicio ACME personalizado',
         customAcmeURL: 'URL del servicio ACME',
         baiduCloud: 'Baidu Cloud',
@@ -4316,7 +4316,7 @@ const message = {
             dir: 'Directorio',
             numprocs: 'Número de procesos',
             initWarn:
-                'Esto modificará el valor de "files" en la sección "[include]" del archivo de configuración principal. El directorio de otros archivos de configuración será: "{directorio de instalación de 1Panel}/1panel/tools/supervisord/supervisor.d/".',
+                'Esto modificará el valor de "files" en la sección "[include]" del archivo de configuración principal. El directorio de otros archivos de configuración será: "{directorio de instalación de NexaCP}/1panel/tools/supervisord/supervisor.d/".',
             operatorHelper: 'La operación {1} se ejecutará en {0}, ¿quieres continuar?',
             uptime: 'Tiempo en ejecución',
             notStartWarn: 'Supervisor no está iniciado. Inícialo primero.',
@@ -5101,7 +5101,7 @@ const message = {
                     clientSecret: 'Client Secret',
                     clockSkew: 'Tolerancia de tiempo del token',
                     clockSkewHelper:
-                        'Permite una pequeña diferencia horaria entre el proveedor de identidad y 1Panel. Mantenga el valor predeterminado de 60 segundos.',
+                        'Permite una pequeña diferencia horaria entre el proveedor de identidad y NexaCP. Mantenga el valor predeterminado de 60 segundos.',
                     clockSkewRequired: 'Ingrese la tolerancia de tiempo del token.',
                     compatibilityMode: 'Modo de compatibilidad',
                     compatibilityModeHelper:
@@ -5221,13 +5221,13 @@ const message = {
                     nameClaimHelper: 'Introduzca el campo que contiene el nombre de usuario, como preferred_username.',
                     nameClaimRequired: 'Introduzca el Claim del nombre de usuario.',
                     nameConflict: 'Política de conflicto de nombres',
-                    panelURL: 'URL pública de 1Panel',
+                    panelURL: 'URL pública de NexaCP',
                     panelURLHTTPWarning:
                         'HTTP no protege la respuesta de autorización. Úselo solo en un entorno privado aislado aceptado por el proveedor.',
                     panelURLHelper:
-                        'Introduzca la dirección que usan los usuarios para acceder a 1Panel. Se utiliza para generar la URL de retorno.',
+                        'Introduzca la dirección que usan los usuarios para acceder a NexaCP. Se utiliza para generar la URL de retorno.',
                     panelURLInvalid: 'Ingrese un origen que contenga solo esquema, host y puerto opcional.',
-                    panelURLRequired: 'Introduzca la URL pública de 1Panel.',
+                    panelURLRequired: 'Introduzca la URL pública de NexaCP.',
                     pkceDisabled: 'Deshabilitado (solo compatibilidad)',
                     pkceDisabledWarning:
                         'Deshabilitar PKCE reduce la protección contra la interceptación de códigos de autorización.',
@@ -5289,7 +5289,7 @@ const message = {
                     signingKeyStatic: 'Clave pública JWK o PEM estática',
                     standardDiscovery: 'OIDC Discovery estándar',
                     standardDiscoveryDesc:
-                        '1Panel descubre los endpoints y las capacidades, pero no almacena el documento sin procesar.',
+                        'NexaCP descubre los endpoints y las capacidades, pero no almacena el documento sin procesar.',
                     standardMode: 'Modo estándar',
                     standardModeHelper:
                         'Descubra puntos finales, capacidades de firma y compatibilidad con PKCE del Issuer.',
@@ -5413,7 +5413,7 @@ const message = {
                     metadataXMLPlaceholder: 'Pegue <EntityDescriptor>...</EntityDescriptor>',
                     nameAttribute: 'Atributo de nombre de usuario',
                     nameAttributeHelper:
-                        'Lee este atributo de la aserción SAML verificada y lo asigna al nombre de usuario de 1Panel.',
+                        'Lee este atributo de la aserción SAML verificada y lo asigna al nombre de usuario de NexaCP.',
                     nameAttributePlaceholder: 'Por ejemplo: uid, username o account',
                     nameAttributeRequired: 'Introduzca el atributo de nombre de usuario.',
                     notConfigured: 'Sin configurar',
@@ -5450,7 +5450,7 @@ const message = {
                         'Se usa para firmar AuthnRequest y mensajes de cierre de sesión. Se cifra en reposo y nunca se muestra.',
                     syncLogout: 'Cierre de sesión sincronizado',
                     syncLogoutHelper:
-                        'Cerrar sesión en 1Panel o en el proveedor de identidad también cierra la sesión del otro lado.',
+                        'Cerrar sesión en NexaCP o en el proveedor de identidad también cierra la sesión del otro lado.',
                     testBeforeBrowserTest:
                         'Pruebe la configuración actual antes de iniciar la prueba de inicio de sesión en el navegador.',
                     testBeforeEnable: 'Prueba la configuración actual antes de habilitar o guardar cambios sensibles.',
@@ -5482,15 +5482,15 @@ const message = {
                     passwordSaved: 'Déjelo en blanco para conservar la contraseña guardada.',
                     userSearch: 'Búsqueda de usuarios',
                     userSearchDesc:
-                        'Configure la base y el filtro de búsqueda, y asigne el atributo LDAP al campo name de 1Panel.',
+                        'Configure la base y el filtro de búsqueda, y asigne el atributo LDAP al campo name de NexaCP.',
                     userFilter: 'Filtro de usuario',
                     userFilterTooltip:
                         'Reemplace %(user)s con el nombre de usuario con carácter de escape o con * para leer el directorio completo.',
                     userFilterHelper:
                         'Los nombres de usuario tienen caracteres de escape antes de insertarlos en el filtro LDAP.',
                     attributeMap: 'Mapeo de atributos',
-                    attributeMapTooltip: 'Mapeo JSON del campo name de 1Panel a un atributo LDAP.',
-                    attributeMapHelper: 'Configure el atributo LDAP asignado al campo name de 1Panel.',
+                    attributeMapTooltip: 'Mapeo JSON del campo name de NexaCP a un atributo LDAP.',
+                    attributeMapHelper: 'Configure el atributo LDAP asignado al campo name de NexaCP.',
                     advanced: 'Configuraciones avanzadas',
                     advancedDesc: 'Configure la paginación de consultas TLS y LDAP.',
                     strictSync: 'Sincronización estricta',
@@ -5530,7 +5530,7 @@ const message = {
                     sync: {
                         title: 'Sincronización programada',
                         description:
-                            'Lea el directorio LDAP completo de forma programada y mantenga los usuarios LDAP importados en 1Panel.',
+                            'Lea el directorio LDAP completo de forma programada y mantenga los usuarios LDAP importados en NexaCP.',
                         enable: 'Habilitar horario',
                         enableHelper:
                             'Cuando está deshabilitado, la ejecución automática se detiene; la sincronización manual permanece disponible.',
@@ -5590,7 +5590,7 @@ const message = {
                     },
                     testLoginTitle: 'Probar inicio de sesión AD/LDAP',
                     testLoginDesc:
-                        'Vincule con una credencial de usuario AD/LDAP para probar solo la autenticación. No se crea ninguna sesión 1Panel.',
+                        'Vincule con una credencial de usuario AD/LDAP para probar solo la autenticación. No se crea ninguna sesión NexaCP.',
                     ldapUsername: 'nombre de usuario LDAP',
                     usernameRequired: 'Ingrese el nombre de usuario LDAP.',
                     startTest: 'Iniciar prueba',
@@ -6173,7 +6173,7 @@ const message = {
             tamperContent4:
                 'Registra accesos y operaciones sobre archivos para auditoría y análisis posteriores, ayudando a detectar amenazas de seguridad.',
             settingTitle1: 'Mensaje de Bienvenida Personalizado',
-            settingContent1: 'Configura un mensaje de bienvenida en la página de login de 1Panel.',
+            settingContent1: 'Configura un mensaje de bienvenida en la página de login de NexaCP.',
             settingTitle2: 'Logo Personalizado',
             settingContent2: 'Permite subir logos con nombres de marca u otro texto.',
             settingTitle3: 'Icono del Sitio Web',
@@ -6230,7 +6230,7 @@ const message = {
             nodeAppContent1:
                 'Monitoreo unificado de actualizaciones de aplicaciones multi-nodo, admite actualización con un clic',
             appTitle1: 'Gestión Flexible del Panel',
-            appContent1: 'Gestiona tu servidor 1Panel en cualquier momento y lugar.',
+            appContent1: 'Gestiona tu servidor NexaCP en cualquier momento y lugar.',
             appTitle2: 'Información Completa de Servicios',
             appContent2:
                 'Administra aplicaciones básicas, sitios web, Docker, bases de datos, etc., y crea nuevos servicios desde la app móvil.',
@@ -6356,7 +6356,7 @@ const message = {
             checkService: 'Verificar servicios existentes en el nodo',
             checkPort: 'Verificar accesibilidad del puerto del nodo',
             panelExist:
-                'Se ha detectado que este nodo ejecuta 1Panel V1. Actualiza a V2 usando el script de migración antes de añadirlo.',
+                'Se ha detectado que este nodo ejecuta NexaCP V1. Actualiza a V2 usando el script de migración antes de añadirlo.',
             coreExist:
                 'Este nodo ya está configurado como nodo principal y no puede añadirse directamente como nodo secundario. Debe degradarse primero a nodo esclavo. Consulta la documentación.',
             agentExist:
@@ -6364,7 +6364,7 @@ const message = {
             agentNotExist:
                 'Se ha detectado que 1panel-agent no está instalado en este nodo, por lo que la información no puede editarse directamente. Elimínalo y vuelve a añadirlo.',
             oldDataExist:
-                'Se han detectado datos históricos de 1Panel V2 en este nodo. La siguiente información sobrescribirá la configuración actual:',
+                'Se han detectado datos históricos de NexaCP V2 en este nodo. La siguiente información sobrescribirá la configuración actual:',
             errLicense: 'La licencia vinculada a este nodo no es válida. Revisa e inténtalo de nuevo.',
             errNodePort:
                 'El puerto del nodo [ {0} ] no es accesible. Verifica si el firewall o el grupo de seguridad permiten este puerto.',
@@ -6385,7 +6385,7 @@ const message = {
             forceDeleteHelper: 'La eliminación forzada ignorará errores y borrará metadatos de la base de datos.',
             uninstall: 'Eliminar datos del nodo',
             uninstallHelper:
-                'Esto eliminará todos los datos relacionados con 1Panel de este nodo. Procede con precaución.',
+                'Esto eliminará todos los datos relacionados con NexaCP de este nodo. Procede con precaución.',
             baseDir: 'Directorio de Instalación',
             baseDirHelper: 'Si el directorio de instalación está vacío, se instalará en /opt por defecto.',
             nodePort: 'Puerto del Nodo',
@@ -6398,7 +6398,7 @@ const message = {
             keepOneDashboardComponent: 'Mantenga al menos una sección del resumen',
             addPanel: 'Añadir panel',
             addPanelHelper: 'Tras añadir el panel, podrás acceder rápidamente en [Resumen - Paneles].',
-            panel: 'Panel 1Panel',
+            panel: 'Panel NexaCP',
             others: 'Otros paneles',
             operatePanelHelper: 'Los siguientes paneles ejecutarán {0}. ¿Continuar?',
         },

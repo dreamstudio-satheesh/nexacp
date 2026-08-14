@@ -329,10 +329,10 @@ const search = async () => {
         ]);
         if (xpackRes) {
             form.theme = xpackRes.data.theme || themeConfig.value.theme || 'light';
-            form.themeColor = JSON.parse(xpackRes.data.themeColor || '{"light":"#005eeb","dark":"#F0BE96"}');
+            form.themeColor = JSON.parse(xpackRes.data.themeColor || '{"light":"#4F46E5","dark":"#F0BE96"}');
             themeConfig.value.themeColor = xpackRes.data.themeColor
                 ? xpackRes.data.themeColor
-                : '{"light":"#005eeb","dark":"#F0BE96"}';
+                : '{"light":"#4F46E5","dark":"#F0BE96"}';
             themeConfig.value.theme = form.theme;
             form.watermark = xpackRes.data.watermark;
             form.watermarkShow = xpackRes.data.watermarkShow;

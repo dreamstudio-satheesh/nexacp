@@ -72,9 +72,9 @@ func updateBindInfo(protocol string) error {
 
 func loadListenIPHelper() {
 	fmt.Println(i18n.GetMsgByKeyForCmd("UpdateCommands"))
-	fmt.Println("\nUsage:\n  1panel listen-ip [command]\n\nAvailable Commands:")
+	fmt.Println("\nUsage:\n  nexacp listen-ip [command]\n\nAvailable Commands:")
 	fmt.Println("\n  ipv4        " + i18n.GetMsgByKeyForCmd("ListenIPv4"))
 	fmt.Println("  ipv6        " + i18n.GetMsgByKeyForCmd("ListenIPv6"))
 	fmt.Println("\nFlags:\n  -h, --help   help for listen-ip")
-	fmt.Println("\nUse \"1panel listen-ip [command] --help\" for more information about a command.")
+	fmt.Println("\nUse \"nexacp listen-ip [command] --help\" for more information about a command.")
 }

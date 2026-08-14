@@ -1,21 +1,21 @@
 :root {
     --panel-gradient-end-color: var(--el-color-primary-light-7);
 
-    --el-color-primary-light-1: #196eed;
-    --el-color-primary-light-2: #337eef;
-    --el-color-primary-light-4: #669ef3;
-    --el-color-primary-light-6: #99bef7;
+    --el-color-primary-light-1: #6159e8;
+    --el-color-primary-light-2: #726bea;
+    --el-color-primary-light-4: #9590ef;
+    --el-color-primary-light-6: #b9b5f5;
 
-    --panel-color-primary: #005eeb;
-    --panel-color-primary-light-8: #196eed;
-    --panel-color-primary-light-1: #196eed;
-    --panel-color-primary-light-2: #337eef;
-    --panel-color-primary-light-3: #4c8ef1;
-    --panel-color-primary-light-4: #669ef3;
-    --panel-color-primary-light-5: #7faef5;
-    --panel-color-primary-light-6: #99bef7;
-    --panel-color-primary-light-7: #b2cef9;
-    --panel-color-primary-light-9: #e5eefd;
+    --panel-color-primary: #4f46e5;
+    --panel-color-primary-light-8: #6159e8;
+    --panel-color-primary-light-1: #6159e8;
+    --panel-color-primary-light-2: #726bea;
+    --panel-color-primary-light-3: #847eed;
+    --panel-color-primary-light-4: #9590ef;
+    --panel-color-primary-light-5: #a7a3f2;
+    --panel-color-primary-light-6: #b9b5f5;
+    --panel-color-primary-light-7: #cac8f7;
+    --panel-color-primary-light-9: #ededfc;
 
     --el-color-primary: var(--panel-color-primary);
     --el-color-primary-light-3: var(--panel-color-primary-light-1);
@@ -29,13 +29,13 @@
 }
 
 html {
-    --el-box-shadow-light: 0px 0px 4px rgba(0, 94, 235, 0.1) !important;
+    --el-box-shadow-light: 0px 0px 4px rgba(79, 70, 229, 0.1) !important;
 
     // * menu
     --el-menu-item-bg-color: rgba(255, 255, 255, 0.3);
     --el-menu-item-bg-color-active: #ffffff;
     --panel-main-bg-color-9: #f4f4f4;
-    --panel-menu-bg-color: rgba(0, 94, 235, 0.1);
+    --panel-menu-bg-color: rgba(79, 70, 229, 0.1);
     --panel-menu-width: 180px;
     --panel-menu-hide-width: 75px;
     --panel-text-color: #1f2329;
@@ -50,7 +50,7 @@ html {
     --panel-terminal-tag-hover-text-color: #575758;
     --panel-terminal-bg-color: #1b1b1b;
     --panel-logs-bg-color: #1b1b1b;
-    --panel-alert-bg-color: rgba(0, 94, 235, 0.03);
+    --panel-alert-bg-color: rgba(79, 70, 229, 0.03);
 
     --panel-alert-bg: #e2e4ec;
     --panel-path-bg: #ffffff;

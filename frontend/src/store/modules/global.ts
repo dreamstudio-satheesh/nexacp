@@ -16,7 +16,7 @@ const GlobalStore = defineStore('GlobalState', {
         device: DeviceType.Desktop,
         themeConfig: {
             panelName: '',
-            primary: '#005eeb',
+            primary: '#4F46E5',
             theme: 'auto',
             footer: true,
             themeColor: '',

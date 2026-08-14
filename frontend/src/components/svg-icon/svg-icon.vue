@@ -16,7 +16,7 @@ const props = defineProps({
     },
     color: {
         type: String,
-        default: '#005eeb',
+        default: '#4F46E5',
     },
 });
 const iconClassName = computed(() => {

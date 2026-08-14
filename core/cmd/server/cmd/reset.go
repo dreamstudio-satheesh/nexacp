@@ -171,7 +171,7 @@ var resetPasskeyCmd = &cobra.Command{
 
 func loadResetHelper() {
 	fmt.Println(i18n.GetMsgByKeyForCmd("ResetCommands"))
-	fmt.Println("\nUsage:\n  1panel reset [command]\n\nAvailable Commands:")
+	fmt.Println("\nUsage:\n  nexacp reset [command]\n\nAvailable Commands:")
 	fmt.Println("\n  domain      " + i18n.GetMsgByKeyForCmd("ResetDomain"))
 	fmt.Println("  entrance    " + i18n.GetMsgByKeyForCmd("ResetEntrance"))
 	fmt.Println("  https       " + i18n.GetMsgByKeyForCmd("ResetHttps"))
@@ -179,5 +179,5 @@ func loadResetHelper() {
 	fmt.Println("  mfa         " + i18n.GetMsgByKeyForCmd("ResetMFA"))
 	fmt.Println("  passkey     " + i18n.GetMsgByKeyForCmd("ResetPasskey"))
 	fmt.Println("\nFlags:\n  -h, --help   help for reset")
-	fmt.Println("\nUse \"1panel reset [command] --help\" for more information about a command.")
+	fmt.Println("\nUse \"nexacp reset [command] --help\" for more information about a command.")
 }

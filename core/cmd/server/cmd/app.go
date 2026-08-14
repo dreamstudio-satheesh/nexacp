@@ -142,17 +142,17 @@ func writeFile(filePath string, in io.Reader) error {
 
 func loadAppHelper() {
 	fmt.Println(i18n.GetMsgByKeyForCmd("AppCommands"))
-	fmt.Println("\nUsage:\n  1panel app [command]\n\nAvailable Commands:")
+	fmt.Println("\nUsage:\n  nexacp app [command]\n\nAvailable Commands:")
 	fmt.Println("\n  init        " + i18n.GetMsgByKeyForCmd("AppInit"))
 	fmt.Println("\nFlags:\n  -h, --help             help for app")
 	fmt.Println("  -k, --key string       " + i18n.GetMsgByKeyForCmd("AppKeyVal"))
 	fmt.Println("  -v, --version string   " + i18n.GetMsgByKeyForCmd("AppVersion"))
-	fmt.Println("\nUse \"1panel app [command] --help\" for more information about a command.")
+	fmt.Println("\nUse \"nexacp app [command] --help\" for more information about a command.")
 }
 
 func loadAppInitHelper() {
 	fmt.Println(i18n.GetMsgByKeyForCmd("AppInit"))
-	fmt.Println("\nUsage:\n  1panel app init [flags]")
+	fmt.Println("\nUsage:\n  nexacp app init [flags]")
 	fmt.Println("\nFlags:\n  -h, --help             help for app")
 	fmt.Println("  -k, --key string       " + i18n.GetMsgByKeyForCmd("AppKeyVal"))
 	fmt.Println("  -v, --version string   " + i18n.GetMsgByKeyForCmd("AppVersion"))

@@ -20,7 +20,7 @@ func init() {
 }
 
 var RootCmd = &cobra.Command{
-	Use: "1panel",
+	Use: "nexacp",
 	RunE: func(cmd *cobra.Command, args []string) error {
 		server.Start()
 		return nil

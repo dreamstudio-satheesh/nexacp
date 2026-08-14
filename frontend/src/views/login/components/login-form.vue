@@ -310,7 +310,7 @@
                             </div>
                         </div>
                         <el-text v-if="isDemo" type="danger" class="demo">
-                            {{ $t('commons.login.username') }}:demo {{ $t('commons.login.password') }}:1panel
+                            {{ $t('commons.login.username') }}:demo {{ $t('commons.login.password') }}:nexacp
                         </el-text>
                         <el-form-item prop="agreeLicense" v-if="!isIntl && !isEnterprise && !isFxplay">
                             <el-checkbox v-model="loginForm.agreeLicense">
@@ -938,7 +938,7 @@ const getSetting = async () => {
 };
 
 const applyLoginButtonTheme = () => {
-    loginBtnLinkColor.value = themeConfig.value.loginBtnLinkColor || '#005eeb';
+    loginBtnLinkColor.value = themeConfig.value.loginBtnLinkColor || '#4F46E5';
     document.documentElement.style.setProperty('--login-btn-link-color', loginBtnLinkColor.value);
     document.documentElement.style.setProperty(
         '--login-btn-link-hover-color',

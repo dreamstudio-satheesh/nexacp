@@ -1070,7 +1070,6 @@ func (a AgentService) CreateAccount(req dto.AgentAccountCreateReq) error {
 	}); err != nil {
 		return err
 	}
-	asyncReportAIProviderInstall(provider)
 	return nil
 }
 

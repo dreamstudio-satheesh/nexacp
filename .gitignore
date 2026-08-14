@@ -79,3 +79,13 @@ opencode.json
 superpowers
 .worktrees/
 .codex/
+
+# NexaCP release build artifacts
+build/
+deploy/stable/
+deploy/resource-repo/
+
+# Vendored release base files (re-include despite upstream ignore rules)
+!deploy/quick_start.sh
+!deploy/pkg-base/install.sh
+!deploy/pkg-base/1pctl

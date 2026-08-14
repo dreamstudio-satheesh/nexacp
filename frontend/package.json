@@ -1,8 +1,8 @@
 {
-    "name": "1panel-frontend",
+    "name": "nexacp-frontend",
     "private": true,
     "version": "2.0",
-    "description": "1Panel 前端",
+    "description": "NexaCP 前端",
     "scripts": {
         "dev": "node --max-old-space-size=8192 ./node_modules/.bin/vite --host",
         "serve": "vite",

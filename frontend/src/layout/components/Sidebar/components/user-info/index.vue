@@ -459,7 +459,7 @@ const form = reactive({
     apiKeyValidityTime: 120,
 });
 const mfaForm = reactive({
-    title: '1Panel',
+    title: 'NexaCP',
     code: '',
     secret: '',
     interval: 30,
@@ -658,7 +658,7 @@ function validateFieldCallback(error: any) {
 
 const startMfaBinding = async () => {
     mfaForm.interval = form.mfaInterval || 30;
-    mfaForm.title = '1Panel-' + form.name;
+    mfaForm.title = 'NexaCP-' + form.name;
     mfaForm.code = '';
     await loadMfaCode();
     mfaDialogOpen.value = true;

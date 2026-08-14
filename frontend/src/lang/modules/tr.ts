@@ -564,13 +564,13 @@ const message = {
         revokeAuthorization: 'Yetkiyi kaldır',
         revokeAuthorizationHelper: '{0} kullanıcısının {1} veritabanına erişimi kaldırılsın mı?',
         supplementPassword: 'Parola ekle',
-        supplementPasswordHelper: 'Yalnızca mevcut parolayı 1Panel içine kaydeder; MySQL parolasını değiştirmez.',
+        supplementPasswordHelper: 'Yalnızca mevcut parolayı NexaCP içine kaydeder; MySQL parolasını değiştirmez.',
         noUserBind: 'Bağlantı yok',
         pgBindHelper:
             'Bu işlem yeni bir kullanıcı oluşturmak ve hedef veritabanına bağlamak için kullanılır. Şu anda veritabanında mevcut olan kullanıcıları seçmek desteklenmiyor.',
         pgSuperUser: 'Süper Kullanıcı',
         loadFromRemoteHelper:
-            'Sunucudaki veritabanlarını, kullanıcıları ve yetkilendirmeleri 1Panel ile eşitler. Devam edilsin mi?',
+            'Sunucudaki veritabanlarını, kullanıcıları ve yetkilendirmeleri NexaCP ile eşitler. Devam edilsin mi?',
         passwordHelper: 'Alınamıyor, değiştirmek için tıklayın',
         remote: 'Uzak',
         remoteDB: 'Uzak sunucu | Uzak sunucular',
@@ -951,7 +951,7 @@ const message = {
             container_conn_helper: 'Konteynerler arası erişim veya bağlantı için bu adresi kullanın',
             ollama_sync:
                 'Ollama modelini senkronize ederken aşağıdaki modellerin mevcut olmadığı tespit edildi, bunları silmek istiyor musunuz?',
-            from_remote: 'Bu model 1Panel aracılığıyla indirilmedi, ilgili çekme logları yok.',
+            from_remote: 'Bu model NexaCP aracılığıyla indirilmedi, ilgili çekme logları yok.',
             no_logs: 'Bu modelin çekme logları silindi ve görüntülenemiyor.',
             vllmVersionHelper: 'FusionXpark GB 10 sunucuları için lütfen -cu130 sürümünü seçin.',
             vllmCommandPortHelper:
@@ -1520,7 +1520,7 @@ const message = {
             protocolVersionHelper:
                 "Yalnızca durum bilgisi tutmayan Streamable HTTP tarafından aşağı akış stdio MCP Server'ı otomatik olarak başlatmak için kullanılır",
             gatewayArgsHelper:
-                'Bağımsız değişkenler supergateway komutuna eklenir. 1Panel tarafından yönetilen aktarım, bağlantı noktası, yol ve protokol bağımsız değişkenleri değiştirilemez',
+                'Bağımsız değişkenler supergateway komutuna eklenir. NexaCP tarafından yönetilen aktarım, bağlantı noktası, yol ve protokol bağımsız değişkenleri değiştirilemez',
             testConnection: 'Bağlantıyı Test Et',
             connectionSuccess: 'Bağlantı başarılı',
             connectionFailed: 'Bağlantı başarısız',
@@ -1559,7 +1559,7 @@ const message = {
         operatorAppHelper:
             'Aşağıdaki konteyner(ler)de "{0}" işlemi gerçekleştirilecek ve çalışan hizmetleri etkileyebilir. Devam etmek istiyor musunuz?',
         containerDeleteHelper:
-            "Kapsayıcının Uygulama Mağazası'ndan geldiği tespit edildi. Kapsayıcıyı silmek, onu 1Panel'den tamamen kaldırmaz. Tamamen silmek için lütfen Uygulama Mağazası -> 'Yüklü' veya 'Çalışma Ortamı' menülerine gidin. Devam edilsin mi?",
+            "Kapsayıcının Uygulama Mağazası'ndan geldiği tespit edildi. Kapsayıcıyı silmek, onu NexaCP'den tamamen kaldırmaz. Tamamen silmek için lütfen Uygulama Mağazası -> 'Yüklü' veya 'Çalışma Ortamı' menülerine gidin. Devam edilsin mi?",
         start: 'Başlat',
         stop: 'Durdur',
         restart: 'Yeniden başlat',
@@ -1779,7 +1779,7 @@ const message = {
         composeNamePriorityHelper:
             'Proje adı önceliği: Docker Compose yapılandırmasında belirtilen ad > dosyanın üst dizini > buraya girilen ad.',
         composeHelper:
-            '1Panel editörü veya şablonu aracılığıyla oluşturulan kompozisyon {0}/docker/compose dizinine kaydedilecektir.',
+            'NexaCP editörü veya şablonu aracılığıyla oluşturulan kompozisyon {0}/docker/compose dizinine kaydedilecektir.',
         deleteFile: 'Dosyayı sil',
         deleteComposeHelper:
             'Yapılandırma dosyaları ve kalıcı dosyalar dahil olmak üzere konteyner compose ile ilgili tüm dosyaları silin. Lütfen dikkatli ilerleyin!',
@@ -1793,12 +1793,12 @@ const message = {
         containerStatus: 'Konteyner durumu',
         exited: 'Çıktı',
         running: 'Çalışıyor ( {0} / {1} )',
-        composeDetailHelper: 'Compose, 1Panel dışında oluşturulmuştur. Başlatma ve durdurma işlemleri desteklenmez.',
+        composeDetailHelper: 'Compose, NexaCP dışında oluşturulmuştur. Başlatma ve durdurma işlemleri desteklenmez.',
         composeOperatorHelper: '{0} üzerinde {1} işlemi gerçekleştirilecek. Devam etmek istiyor musunuz?',
         composeDownHelper:
             'Bu, {0} compose altındaki tüm konteynerleri ve ağları durduracak ve kaldıracaktır. Devam etmek istiyor musunuz?',
         composeEnvHelper2:
-            'Bu düzenleme 1Panel Uygulama Mağazası tarafından oluşturuldu. Lütfen ortam değişkenlerini yüklü uygulamalarda değiştirin.',
+            'Bu düzenleme NexaCP Uygulama Mağazası tarafından oluşturuldu. Lütfen ortam değişkenlerini yüklü uygulamalarda değiştirin.',
         composeContentPlaceholder: 'Docker-compose dosyanızın içeriğini buraya yazın veya yapıştırın',
         setting: 'Ayar | Ayarlar',
         goSetting: 'Ayarlara git',
@@ -1969,7 +1969,7 @@ const message = {
         noLogs: 'Henüz görev çıktısı yok...',
         errPath: 'Yedek yolu [{0}] hatası, indirilemez!',
         cutWebsiteLog: 'Website log döndürme',
-        cutWebsiteLogHelper: 'Döndürülen log dosyaları 1Panel yedek dizinine yedeklenecektir.',
+        cutWebsiteLogHelper: 'Döndürülen log dosyaları NexaCP yedek dizinine yedeklenecektir.',
         syncIpGroup: 'WAF IP gruplarını senkronize et',
         syncIpGroupHelper: 'WAF kara/beyaz listelerinde kullanılan uzak IP gruplarını senkronize eder',
         requestExpirationTime: 'Yükleme isteği son kullanma süresi(Saat)',
@@ -1998,7 +1998,7 @@ const message = {
             syncHelper:
                 'Sistem script kütüphanesini senkronize etmek üzere. Bu işlem sadece sistem scriptlerini etkiler. Devam edilsin mi?',
         },
-        logHelper1: '1. 1Panel sistem günlüğü',
+        logHelper1: '1. NexaCP sistem günlüğü',
         ignoreErr: 'Hataları yok say',
         ignoreErrHelper: 'Tüm görevlerin tamamlanması için yedekleme hatalarını yok say',
         cleanLog: 'Günlükleri otomatik temizle',
@@ -2648,7 +2648,7 @@ const message = {
         previewTruncated: 'Dosya çok büyük, yalnızca son kısım gösteriliyor',
         previewEmpty: 'Dosya boş veya metin dosyası değil',
         previewLargeFile: 'Önizleme',
-        panelInstallDir: '1Panel kurulum dizini silinemez',
+        panelInstallDir: 'NexaCP kurulum dizini silinemez',
         wgetTask: 'İndirme Görevi',
         stopWgetConfirm: 'Bu indirme görevini durdurmak istediğinizden emin misiniz?',
         existFileTitle: 'Aynı ada sahip dosya uyarısı',
@@ -2866,7 +2866,7 @@ const message = {
         timeZoneChangeHelper:
             'Saat dilimini değiştirmek servisin yeniden başlatılmasını gerektirir. Devam etmek istiyor musunuz?',
         timeZoneHelper:
-            'Saat dilimi değişikliği, sistem timedatectl servisine bağlıdır. 1Panel servisi yeniden başlatıldıktan sonra etkili olur.',
+            'Saat dilimi değişikliği, sistem timedatectl servisine bağlıdır. NexaCP servisi yeniden başlatıldıktan sonra etkili olur.',
         timeZoneCN: 'Pekin',
         timeZoneAM: 'Los Angeles',
         timeZoneNY: 'New York',
@@ -2992,7 +2992,7 @@ const message = {
             'Sadece bu IP/CIDR kaynaklarından gelen isteklerde Forwarded ve X-Forwarded-Proto HTTPS belirlenmesinde kullanılır',
         passkeyNotSupported: 'Tarayıcı/ortam passkey desteklemiyor; alan adı ve HTTPS erişimini doğrulayın',
         passkeyPrereqTitle: 'Passkey için aşağıdaki ön koşullar gereklidir',
-        passkeyPrereqBindDomain: '1Panel alan adı bağlama yapılandırıldı',
+        passkeyPrereqBindDomain: 'NexaCP alan adı bağlama yapılandırıldı',
         passkeyPrereqHttps: 'HTTPS üzerinden güvenli erişim sağlandı',
         passkeyPrereqBrowser: 'Ortam Passkey destekliyor (WebAuthn + platform doğrulayıcı)',
         passkeyPrereqBrowserDetailWebAuthnUnavailable:
@@ -3044,10 +3044,10 @@ const message = {
         panelSSL: 'Panel SSL',
         unBindDomainHelper:
             'Alan adı bağlamasını kaldırma işlemi sistem güvenliğini etkileyebilir. Devam etmek istiyor musunuz?',
-        bindDomainHelper: 'Alan adı bağlandıktan sonra, yalnızca o alan adı 1Panel servisine erişebilir.',
+        bindDomainHelper: 'Alan adı bağlandıktan sonra, yalnızca o alan adı NexaCP servisine erişebilir.',
         bindDomainHelper1: 'Alan adı bağlamasını devre dışı bırakmak için boş bırakın.',
         bindDomainWarning:
-            'Alan adı bağlamasından sonra oturumunuz kapatılacak ve yalnızca ayarlarınızda belirtilen alan adı üzerinden 1Panel servisine erişebilirsiniz. Devam etmek istiyor musunuz?',
+            'Alan adı bağlamasından sonra oturumunuz kapatılacak ve yalnızca ayarlarınızda belirtilen alan adı üzerinden NexaCP servisine erişebilirsiniz. Devam etmek istiyor musunuz?',
         allowIPs: 'Yetkili IP',
         unAllowIPs: 'Yetkisiz IP',
         unAllowIPsWarning:
@@ -3063,7 +3063,7 @@ const message = {
         secret: 'Gizli',
         mfaInterval: 'Yenileme aralığı(saniye)',
         mfaTitleHelper:
-            'Başlık, farklı 1Panel ana bilgisayarlarını ayırt etmek için kullanılır. Başlığı değiştirdikten sonra QR kodunu tekrar tarayın veya gizli anahtarı manuel olarak ekleyin.',
+            'Başlık, farklı NexaCP ana bilgisayarlarını ayırt etmek için kullanılır. Başlığı değiştirdikten sonra QR kodunu tekrar tarayın veya gizli anahtarı manuel olarak ekleyin.',
         mfaIntervalHelper:
             'Yenileme aralığını değiştirdikten sonra QR kodunu tekrar tarayın veya gizli anahtarı manuel olarak ekleyin.\nBazı doğrulayıcı uygulamalar yalnızca 30 saniyelik aralığı destekler (ör. Google/Microsoft Authenticator).',
         mfaAlert:
@@ -3149,14 +3149,14 @@ const message = {
         ignoreRule: 'Yoksayma kuralı',
         editIgnoreRule: '@:commons.button.edit @.lower:setting.ignoreRule',
         ignoreHelper:
-            'Bu kural, anlık görüntü oluştururken 1Panel veri dizinini sıkıştırmak ve yedeklemek için kullanılacaktır. Varsayılan olarak, soket dosyaları yok sayılır.',
+            'Bu kural, anlık görüntü oluştururken NexaCP veri dizinini sıkıştırmak ve yedeklemek için kullanılacaktır. Varsayılan olarak, soket dosyaları yok sayılır.',
         ignoreHelper1: 'Her satıra bir tane. Örneğin,\n*.log\n/opt/1panel/cache',
-        panelInfo: '1Panel temel bilgilerini yaz',
-        panelBin: '1Panel sistem dosyalarını yedekle',
+        panelInfo: 'NexaCP temel bilgilerini yaz',
+        panelBin: 'NexaCP sistem dosyalarını yedekle',
         daemonJson: 'Docker yapılandırma dosyasını yedekle',
-        appData: '1Panel’den yüklenen uygulamaları yedekle',
-        panelData: '1Panel veri dizinini yedekle',
-        backupData: '1Panel için yerel yedekleme dizinini yedekle',
+        appData: 'NexaCP’den yüklenen uygulamaları yedekle',
+        panelData: 'NexaCP veri dizinini yedekle',
+        backupData: 'NexaCP için yerel yedekleme dizinini yedekle',
         compress: 'Anlık görüntü dosyası oluştur',
         upload: 'Anlık görüntü dosyasını yükle',
         recoverDetail: 'Kurtarma detayı',
@@ -3168,7 +3168,7 @@ const message = {
         recoverErrSize: 'Yetersiz disk alanı tespit edildi, lütfen kontrol edin veya temizleyin ve tekrar deneyin!',
         recoverHelper:
             '{0} anlık görüntüsünden kurtarma başlatılıyor, lütfen devam etmeden önce aşağıdaki bilgileri onaylayın:',
-        recoverHelper1: 'Kurtarma, Docker ve 1Panel servislerinin yeniden başlatılmasını gerektirir',
+        recoverHelper1: 'Kurtarma, Docker ve NexaCP servislerinin yeniden başlatılmasını gerektirir',
         recoverHelper2:
             'Sunucuda yeterli disk alanının olduğundan emin olun (Anlık görüntü dosyası boyutu: {0}, Mevcut alan: {1})',
         recoverHelper3:
@@ -3177,10 +3177,10 @@ const message = {
             'Bu işlem yalnızca ana düğümü geri alır. Yükseltilmiş alt düğümler varsa, devam etmeden önce bunları geri alın.',
         rollback: 'Geri al',
         rollbackHelper:
-            'Bu kurtarmayı geri almak, bu kurtarmadan gelen tüm dosyaları değiştirecek ve Docker ile 1Panel servislerinin yeniden başlatılmasını gerektirebilir. Devam etmek istiyor musunuz?',
+            'Bu kurtarmayı geri almak, bu kurtarmadan gelen tüm dosyaları değiştirecek ve Docker ile NexaCP servislerinin yeniden başlatılmasını gerektirebilir. Devam etmek istiyor musunuz?',
         upgradeRecord: 'Yükseltme kaydı',
         upgrading: 'Yükseltiliyor, lütfen bekleyin...',
-        upgradeHelper: 'Yükseltme, 1Panel servisinin yeniden başlatılmasını gerektirir. Devam etmek istiyor musunuz?',
+        upgradeHelper: 'Yükseltme, NexaCP servisinin yeniden başlatılmasını gerektirir. Devam etmek istiyor musunuz?',
         noUpgrade: 'Şu anda en son sürüm',
         versionHelper:
             'Ad kuralları: [ana sürüm].[fonksiyonel sürüm].[Hata düzeltme sürümü], aşağıdaki örnekte gösterildiği gibi:',
@@ -3265,7 +3265,7 @@ const message = {
         importLicense: 'Lisansı içe aktar',
         securityWarningTitle: 'Kırılmış veya kaynağı bilinmeyen lisansları kullanmayın.',
         securityWarningContent:
-            '1Panel sistem yönetimi yetkilerine sahip bir kullanıcıyla çalışmalıdır. Resmi olmayan lisanslar veya değiştirilmiş sürümler sunucu kontrolünün kaybına, veri sızıntılarına ve diğer ciddi güvenlik risklerine neden olabilir. Lisansları ve kurulum paketlerini yalnızca resmi FIT2CLOUD kanallarından edinin.',
+            'NexaCP sistem yönetimi yetkilerine sahip bir kullanıcıyla çalışmalıdır. Resmi olmayan lisanslar veya değiştirilmiş sürümler sunucu kontrolünün kaybına, veri sızıntılarına ve diğer ciddi güvenlik risklerine neden olabilir. Lisansları ve kurulum paketlerini yalnızca resmi FIT2CLOUD kanallarından edinin.',
         importHelper: 'Lütfen lisans dosyasını buraya tıklayın veya sürükleyin',
         licenseRequiredTip:
             'Lisans henüz içe aktarılmadı. Cihaz kimliğini kopyalayıp lisansı alın ve giriş yapmadan önce içe aktarın.',
@@ -3311,7 +3311,7 @@ const message = {
         monitor:
             'Ticari sürüme yükselterek web sitesinin gerçek zamanlı durumunu, ziyaretçi eğilimlerini, kaynaklarını ve istek günlüklerini görüntüleyebilirsiniz.',
         alert: 'Ticari sürüme yükselterek SMS uyarıları alabilir, uyarı günlüklerini görüntüleyebilir ve kritik olayları takip edebilirsiniz.',
-        node: 'Ticari sürüme yükselterek 1Panel ile birden fazla Linux sunucusunu yönetebilirsiniz.',
+        node: 'Ticari sürüme yükselterek NexaCP ile birden fazla Linux sunucusunu yönetebilirsiniz.',
         nodeApp:
             'Ticari sürüme yükselterek düğümleri manuel değiştirmeden çok düğümlü uygulama sürümlerini toplu olarak yükseltebilirsiniz.',
         nodeDashboard:
@@ -3319,13 +3319,13 @@ const message = {
         fileExchange: 'Ticari sürüme yükselterek birden fazla sunucu arasında dosyaları hızlıca aktarabilirsiniz.',
         app: 'Ticari sürüme yükselterek mobil uygulamada hizmet bilgilerini ve anormallik izlemeyi görüntüleyebilirsiniz.',
         cluster: 'Ticari sürüme yükselterek MySQL/Postgres/Redis birincil-kopya kümelerini yönetebilirsiniz.',
-        vllm: 'Ticari sürüme yükselterek vLLM hizmetlerini 1Panel içinde merkezi olarak dağıtabilir, yapılandırabilir, yaşam döngüsünü yönetebilir ve görevleri izleyebilirsiniz.',
+        vllm: 'Ticari sürüme yükselterek vLLM hizmetlerini NexaCP içinde merkezi olarak dağıtabilir, yapılandırabilir, yaşam döngüsünü yönetebilir ve görevleri izleyebilirsiniz.',
         'model-downloader':
             'Ticari sürüme yükselterek HuggingFace, ModelScope veya uyumlu aynalardan yerel model dosyalarını arayabilir, indirebilir ve yönetebilir; model dizinlerini ve indirme görevlerini merkezi olarak takip edebilirsiniz.',
     },
     clean: {
         scan: 'Taramayı başlat',
-        scanHelper: '1Panel çalışma zamanında üretilen gereksiz dosyaları kolayca temizleyin',
+        scanHelper: 'NexaCP çalışma zamanında üretilen gereksiz dosyaları kolayca temizleyin',
         clean: 'Şimdi temizle',
         reScan: 'Yeniden tara',
         cleanHelper: 'Seçilen dosya ve dizinler temizlendikten sonra geri alınamaz. Devam etmek istiyor musunuz?',
@@ -4081,7 +4081,7 @@ const message = {
         execShell: 'Sertifika isteğinden sonra betiği çalıştır.',
         shell: 'Betik içeriği',
         shellHelper:
-            'Betiğin varsayılan yürütme dizini, 1Panel kurulum dizinidir. Sertifika yerel dizine aktarılırsa, yürütme dizini sertifika aktarma dizini olacaktır. Varsayılan yürütme zaman aşımı 30 dakikadır.',
+            'Betiğin varsayılan yürütme dizini, NexaCP kurulum dizinidir. Sertifika yerel dizine aktarılırsa, yürütme dizini sertifika aktarma dizini olacaktır. Varsayılan yürütme zaman aşımı 30 dakikadır.',
         customAcme: 'Özel ACME Servisi',
         customAcmeURL: 'ACME Servis URL’si',
         baiduCloud: 'Baidu Cloud',
@@ -4340,7 +4340,7 @@ const message = {
             dir: 'Dizin',
             numprocs: 'İşlem sayısı',
             initWarn:
-                'Bu, ana yapılandırma dosyasındaki "[include]" bölümündeki "files" değerini değiştirecektir. Diğer yapılandırma dosyasının dizini şu şekilde olacaktır: "{1Panel kurulum dizini}/1panel/tools/supervisord/supervisor.d/".',
+                'Bu, ana yapılandırma dosyasındaki "[include]" bölümündeki "files" değerini değiştirecektir. Diğer yapılandırma dosyasının dizini şu şekilde olacaktır: "{NexaCP kurulum dizini}/1panel/tools/supervisord/supervisor.d/".',
             operatorHelper: '{0} üzerinde {1} işlemi gerçekleştirilecek, devam etmek istiyor musunuz?',
             uptime: 'Çalışma süresi',
             notStartWarn: 'Supervisor başlatılmadı. Önce başlatın.',
@@ -5110,7 +5110,7 @@ const message = {
                     clientSecret: 'Client Secret',
                     clockSkew: 'Token zaman toleransı',
                     clockSkewHelper:
-                        'Kimlik sağlayıcı ile 1Panel arasındaki küçük zaman farklarına izin verir. Varsayılan 60 saniyeyi koruyun.',
+                        'Kimlik sağlayıcı ile NexaCP arasındaki küçük zaman farklarına izin verir. Varsayılan 60 saniyeyi koruyun.',
                     clockSkewRequired: 'Token zaman toleransını girin.',
                     compatibilityMode: 'Uyumluluk modu',
                     compatibilityModeHelper:
@@ -5226,14 +5226,14 @@ const message = {
                     nameClaimHelper: 'Kullanıcı adını içeren alanı girin (ör. preferred_username).',
                     nameClaimRequired: "Kullanıcı adı Claim'ini girin.",
                     nameConflict: 'Ad çakışması politikası',
-                    panelURL: '1Panel halka açık URL',
+                    panelURL: 'NexaCP halka açık URL',
                     panelURLHTTPWarning:
                         'HTTP yetkilendirme yanıtını korumaz. Bunu yalnızca Provider tarafından kabul edilen yalıtılmış bir özel ortamda kullanın.',
                     panelURLHelper:
-                        "Kullanıcıların 1Panel'e eriştiği adresi girin. Geri çağırma URL'sini oluşturmak için kullanılır.",
+                        "Kullanıcıların NexaCP'e eriştiği adresi girin. Geri çağırma URL'sini oluşturmak için kullanılır.",
                     panelURLInvalid:
                         'Yalnızca şema, ana bilgisayar ve isteğe bağlı bağlantı noktasını içeren bir kaynak girin.',
-                    panelURLRequired: "1Panel genel URL'i girin.",
+                    panelURLRequired: "NexaCP genel URL'i girin.",
                     pkceDisabled: 'Devre dışı (yalnızca uyumluluk)',
                     pkceDisabledWarning:
                         "PKCE'in devre dışı bırakılması, yetkilendirme kodu müdahalesine karşı korumayı azaltır.",
@@ -5293,7 +5293,7 @@ const message = {
                         "JWKS'i tercih edin. Statik açık anahtar otomatik olarak rotasyona tabi tutulamaz.",
                     signingKeyStatic: 'Statik JWK veya PEM açık anahtarı',
                     standardDiscovery: 'Standart OIDC Discovery',
-                    standardDiscoveryDesc: '1Panel uç noktaları ve yetenekleri keşfeder ve ham belgeyi saklamaz.',
+                    standardDiscoveryDesc: 'NexaCP uç noktaları ve yetenekleri keşfeder ve ham belgeyi saklamaz.',
                     standardMode: 'Standart mod',
                     standardModeHelper: "Issuer'in uç noktalarını, imzalama yeteneklerini ve PKCE desteğini keşfedin.",
                     standardProtocolPolicy: 'Standart protokol politikası',
@@ -5415,7 +5415,7 @@ const message = {
                     metadataXMLPlaceholder: '<EntityDescriptor>...</EntityDescriptor> içeriğini yapıştırın',
                     nameAttribute: 'Kullanıcı adı özniteliği',
                     nameAttributeHelper:
-                        'Bu özniteliği doğrulanmış SAML Assertion içinden okur ve 1Panel kullanıcı adına eşler.',
+                        'Bu özniteliği doğrulanmış SAML Assertion içinden okur ve NexaCP kullanıcı adına eşler.',
                     nameAttributePlaceholder: 'Örneğin: uid, username veya account',
                     nameAttributeRequired: 'Kullanıcı adı özniteliğini girin.',
                     notConfigured: 'Yapılandırılmadı',
@@ -5450,7 +5450,7 @@ const message = {
                         'AuthnRequest ve oturum kapatma mesajlarını imzalamak için kullanılır. Saklanırken şifrelenir ve hiçbir zaman gösterilmez.',
                     syncLogout: 'Eşzamanlı oturum kapatma',
                     syncLogoutHelper:
-                        "1Panel'den veya kimlik sağlayıcıdan çıkış yapmak diğer taraftaki oturumu da kapatır.",
+                        "NexaCP'den veya kimlik sağlayıcıdan çıkış yapmak diğer taraftaki oturumu da kapatır.",
                     testBeforeBrowserTest:
                         'Tarayıcı oturum açma testine başlamadan önce mevcut yapılandırmayı test edin.',
                     testBeforeEnable:
@@ -5483,14 +5483,14 @@ const message = {
                     passwordSaved: 'Kaydedilen şifreyi korumak için boş bırakın',
                     userSearch: 'Kullanıcı arama',
                     userSearchDesc:
-                        'Kullanıcı arama tabanını ve filtreyi ayarlayın, ardından 1Panel name olarak kullanılan LDAP niteliğini eşleyin.',
+                        'Kullanıcı arama tabanını ve filtreyi ayarlayın, ardından NexaCP name olarak kullanılan LDAP niteliğini eşleyin.',
                     userFilter: 'Kullanıcı filtresi',
                     userFilterTooltip:
                         "Tam dizin okunması için %(user)s'yu çıkışlı kullanıcı adıyla veya * ile değiştirin.",
                     userFilterHelper: 'Kullanıcı adları LDAP filtresine eklenmeden önce çıkış karakteri kullanılır.',
                     attributeMap: 'Özellik eşleme',
-                    attributeMapTooltip: 'JSON, 1Panel name alanından bir LDAP özniteliğine eşleme.',
-                    attributeMapHelper: '1Panel name alanına eşlenen LDAP niteliğini ayarlayın.',
+                    attributeMapTooltip: 'JSON, NexaCP name alanından bir LDAP özniteliğine eşleme.',
+                    attributeMapHelper: 'NexaCP name alanına eşlenen LDAP niteliğini ayarlayın.',
                     advanced: 'Gelişmiş ayarlar',
                     advancedDesc: 'TLS ve LDAP sorgu sayfalamayı yapılandırın.',
                     strictSync: 'Sıkı senkronizasyon',
@@ -5530,7 +5530,7 @@ const message = {
                     sync: {
                         title: 'Planlanmış senkronizasyon',
                         description:
-                            "LDAP dizininin tamamını bir programa göre okuyun ve 1Panel'da içe aktarılan LDAP kullanıcılarını koruyun.",
+                            "LDAP dizininin tamamını bir programa göre okuyun ve NexaCP'da içe aktarılan LDAP kullanıcılarını koruyun.",
                         enable: 'Programı etkinleştir',
                         enableHelper:
                             'Devre dışı bırakıldığında otomatik yürütme durur; manuel senkronizasyon kullanılabilir durumda kalır.',
@@ -5591,7 +5591,7 @@ const message = {
                     },
                     testLoginTitle: 'AD/LDAP oturum açmayı test et',
                     testLoginDesc:
-                        'Yalnızca kimlik doğrulamayı test etmek için AD/LDAP kullanıcı kimlik bilgileriyle bağlantı kurun. 1Panel oturumu oluşturulmadı.',
+                        'Yalnızca kimlik doğrulamayı test etmek için AD/LDAP kullanıcı kimlik bilgileriyle bağlantı kurun. NexaCP oturumu oluşturulmadı.',
                     ldapUsername: 'LDAP kullanıcı adı',
                     usernameRequired: 'LDAP kullanıcı adını girin.',
                     startTest: 'Testi başlat',
@@ -6183,7 +6183,7 @@ const message = {
             tamperContent4:
                 'Yöneticilerin sonraki denetim ve analiz için dosya erişimi ve işlem günlüklerini kaydeder, potansiyel güvenlik tehditlerini belirler.',
             settingTitle1: 'Özel Hoş Geldiniz Mesajı',
-            settingContent1: '1Panel giriş sayfasında özel bir hoş geldiniz mesajı ayarlayın.',
+            settingContent1: 'NexaCP giriş sayfasında özel bir hoş geldiniz mesajı ayarlayın.',
             settingTitle2: 'Özel Logo',
             settingContent2: 'Marka adları veya başka metinler içeren logo görüntülerinin yüklenmesine izin verir.',
             settingTitle3: 'Özel Web Sitesi Simgesi',
@@ -6240,7 +6240,7 @@ const message = {
             nodeAppContent1:
                 'Çoklu düğüm uygulama güncellemelerinin birleşik izlenmesi, tek tıklamayla yükseltme desteği',
             appTitle1: 'Esnek Panel Yönetimi',
-            appContent1: '1Panel sunucunuzu her zaman, her yerde kolayca yönetin.',
+            appContent1: 'NexaCP sunucunuzu her zaman, her yerde kolayca yönetin.',
             appTitle2: 'Kapsamlı Hizmet Bilgisi',
             appContent2:
                 'Temel uygulamaları, web sitelerini, Docker’ı, veritabanlarını vb. yönetin ve mobil uygulama üzerinden hızlıca uygulamalar ve web siteleri oluşturun.',
@@ -6270,7 +6270,7 @@ const message = {
                 'Yerel model dizinlerini tek yerden yönetin; yolları, boyutları, zamanları görüntüleyin ve kullanılmayan model dosyalarını silin.',
             vllmTitle1: 'Merkezi Yönetim',
             vllmContent1:
-                "Dağıtık vLLM örneklerini 1Panel'e entegre edin ve sürümleri, çalışma durumlarını ve çalışma dizinlerini merkezi olarak yönetin.",
+                "Dağıtık vLLM örneklerini NexaCP'e entegre edin ve sürümleri, çalışma durumlarını ve çalışma dizinlerini merkezi olarak yönetin.",
             vllmTitle2: 'Hızlı Dağıtım',
             vllmContent2:
                 'Görsel formlar aracılığıyla sürüm seçimi, model dizini bağlama ve başlatma parametrelerinin yapılandırılmasını tamamlayarak manuel yapılandırma karmaşıklığını azaltın.',
@@ -6331,7 +6331,7 @@ const message = {
             addPanel: 'Panel Ekle',
             addPanelHelper:
                 'Panel başarıyla eklendikten sonra, [Genel Bakış - Paneller] bölümünden hedef panele hızlıca erişebilirsiniz.',
-            panel: '1Panel Paneli',
+            panel: 'NexaCP Paneli',
             others: 'Diğer Paneller',
             addNode: 'Düğüm Ekle',
             connInfo: 'Bağlantı Bilgileri',
@@ -6369,7 +6369,7 @@ const message = {
             checkService: 'Düğümdeki mevcut hizmet bilgilerini kontrol et',
             checkPort: 'Düğüm port erişilebilirliğini kontrol et',
             panelExist:
-                'Bu düğümde 1Panel V1 hizmeti çalıştığı algılandı. Lütfen eklemeden önce geçiş betiğini kullanarak V2’ye yükseltin.',
+                'Bu düğümde NexaCP V1 hizmeti çalıştığı algılandı. Lütfen eklemeden önce geçiş betiğini kullanarak V2’ye yükseltin.',
             coreExist:
                 'Mevcut düğüm zaten ana düğüm olarak etkinleştirilmiş durumda ve doğrudan alt düğüm olarak eklenemez. Lütfen eklemeden önce alt düğüme dönüştürün, ayrıntılar için belgelere bakın.',
             agentExist:
@@ -6377,7 +6377,7 @@ const message = {
             agentNotExist:
                 'Bu düğümde 1panel-agent yüklü olmadığı tespit edildi, düğüm bilgileri doğrudan düzenlenemez. Lütfen silip tekrar ekleyin.',
             oldDataExist:
-                'Bu düğümde geçmiş 1Panel V2 verileri algılandı. Aşağıdaki bilgiler mevcut ayarları üzerine yazmak için kullanılacaktır:',
+                'Bu düğümde geçmiş NexaCP V2 verileri algılandı. Aşağıdaki bilgiler mevcut ayarları üzerine yazmak için kullanılacaktır:',
             errLicense: 'Bu düğüme bağlı lisans kullanılamıyor. Lütfen kontrol edin ve tekrar deneyin!',
             errNodePort:
                 'Düğüm portu [ {0} ] erişilemez olarak algılandı. Lütfen güvenlik duvarı veya güvenlik grubunun bu portu izin verdiğinden emin olun.',
@@ -6398,7 +6398,7 @@ const message = {
             operatePanelHelper: 'Aşağıdaki panellerde {0} işlemi gerçekleştirilecek. Devam etmek istiyor musunuz?',
             forceDeleteHelper: 'Zorla silme, düğüm silme hatalarını yok sayar ve veritabanı meta verilerini siler',
             uninstall: 'Düğüm verilerini sil',
-            uninstallHelper: 'Bu, düğümle ilgili tüm 1Panel verilerini silecektir. Dikkatli ilerleyin!',
+            uninstallHelper: 'Bu, düğümle ilgili tüm NexaCP verilerini silecektir. Dikkatli ilerleyin!',
             baseDir: 'Kurulum Dizini',
             baseDirHelper: 'Kurulum dizini boş olduğunda, varsayılan olarak /opt dizinine kurulur',
             nodePort: 'Düğüm Portu',

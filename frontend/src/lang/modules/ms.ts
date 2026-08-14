@@ -570,13 +570,13 @@ const message = {
         revokeAuthorization: 'Tarik balik kebenaran',
         revokeAuthorizationHelper: 'Tarik balik akses pengguna {0} kepada pangkalan data {1}?',
         supplementPassword: 'Tambah kata laluan',
-        supplementPasswordHelper: 'Hanya menyimpan kata laluan sedia ada ke 1Panel dan tidak mengubahnya dalam MySQL.',
+        supplementPasswordHelper: 'Hanya menyimpan kata laluan sedia ada ke NexaCP dan tidak mengubahnya dalam MySQL.',
         noUserBind: 'Tiada kaitan',
         pgBindHelper:
             'Operasi ini digunakan untuk mencipta pengguna baharu dan mengaitkannya dengan pangkalan data sasaran. Pada masa ini, memilih pengguna yang sudah wujud dalam pangkalan data tidak disokong.',
         pgSuperUser: 'Pengguna Super',
         loadFromRemoteHelper:
-            'Ini akan menyelaraskan pangkalan data, pengguna dan kebenaran dari pelayan ke 1Panel. Teruskan?',
+            'Ini akan menyelaraskan pangkalan data, pengguna dan kebenaran dari pelayan ke NexaCP. Teruskan?',
         passwordHelper: 'Tidak dapat diperoleh, klik untuk ubah',
         remote: 'Jauh',
         remoteDB: 'Pelayan jauh | Pelayan-pelayan jauh',
@@ -953,7 +953,7 @@ const message = {
             container_conn_helper: 'Gunakan alamat ini untuk akses atau sambungan antara kontena',
             ollama_sync:
                 'Semasa menyegerakkan model Ollama, model berikut didapati tidak wujud. Adakah anda mahu memadamkannya?',
-            from_remote: 'Model ini tidak dimuat turun melalui 1Panel; tiada log muat turun berkaitan.',
+            from_remote: 'Model ini tidak dimuat turun melalui NexaCP; tiada log muat turun berkaitan.',
             no_logs: 'Log muat turun model ini telah dipadam dan tidak boleh dilihat.',
             vllmVersionHelper: 'Untuk pelayan FusionXpark GB 10, sila pilih versi -cu130.',
             vllmCommandPortHelper:
@@ -1525,7 +1525,7 @@ const message = {
             protocolVersionHelper:
                 'Hanya digunakan oleh Streamable HTTP tanpa keadaan untuk memulakan MCP Server stdio hiliran secara automatik',
             gatewayArgsHelper:
-                'Argumen ditambahkan pada arahan supergateway. Argumen pengangkutan, port, laluan dan protokol yang diurus oleh 1Panel tidak boleh diubah',
+                'Argumen ditambahkan pada arahan supergateway. Argumen pengangkutan, port, laluan dan protokol yang diurus oleh NexaCP tidak boleh diubah',
             testConnection: 'Uji Sambungan',
             connectionSuccess: 'Sambungan berjaya',
             connectionFailed: 'Sambungan gagal',
@@ -1562,7 +1562,7 @@ const message = {
         operatorAppHelper:
             'Operasi "{0}" akan dilakukan pada kontena berikut dan mungkin mempengaruhi perkhidmatan yang sedang berjalan. Adakah anda mahu meneruskan?',
         containerDeleteHelper:
-            "Dikesan bahawa bekas ini berasal dari Kedai Apl. Memadam bekas tidak akan mengalihnya sepenuhnya dari 1Panel. Untuk memadam sepenuhnya, sila pergi ke Kedai Apl -> menu 'Dipasang' atau 'Persekitaran Runtime'. Teruskan?",
+            "Dikesan bahawa bekas ini berasal dari Kedai Apl. Memadam bekas tidak akan mengalihnya sepenuhnya dari NexaCP. Untuk memadam sepenuhnya, sila pergi ke Kedai Apl -> menu 'Dipasang' atau 'Persekitaran Runtime'. Teruskan?",
         start: 'Mulakan',
         stop: 'Hentikan',
         restart: 'Mulakan semula',
@@ -1778,7 +1778,7 @@ const message = {
         composeNamePriorityHelper:
             'Keutamaan nama projek: nama dalam konfigurasi Docker Compose > direktori induk fail > nama yang dimasukkan di sini.',
         composeHelper:
-            'Komposisi yang dicipta melalui editor atau templat 1Panel akan disimpan dalam direktori {0}/docker/compose.',
+            'Komposisi yang dicipta melalui editor atau templat NexaCP akan disimpan dalam direktori {0}/docker/compose.',
         deleteFile: 'Padam fail',
         deleteComposeHelper:
             'Padam semua fail berkaitan komposisi kontena, termasuk fail konfigurasi dan fail berterusan. Sila berhati-hati!',
@@ -1792,12 +1792,12 @@ const message = {
         containerStatus: 'Status kontena',
         exited: 'Keluar',
         running: 'Berjalan ( {0} / {1} )',
-        composeDetailHelper: 'Komposisi dibuat di luar 1Panel. Operasi mula dan berhenti tidak disokong.',
+        composeDetailHelper: 'Komposisi dibuat di luar NexaCP. Operasi mula dan berhenti tidak disokong.',
         composeOperatorHelper: 'Operasi {1} akan dilakukan pada {0}. Adakah anda mahu meneruskan?',
         composeDownHelper:
             'Ini akan menghentikan dan menghapuskan semua kontena dan rangkaian di bawah komposisi {0}. Adakah anda mahu meneruskan?',
         composeEnvHelper2:
-            'Penyelarasan ini dibuat oleh Kedai Apl 1Panel. Sila ubah pembolehubah persekitaran dalam aplikasi yang dipasang.',
+            'Penyelarasan ini dibuat oleh Kedai Apl NexaCP. Sila ubah pembolehubah persekitaran dalam aplikasi yang dipasang.',
         composeContentPlaceholder: 'Tulis atau tampal kandungan fail docker-compose anda di sini',
         setting: 'Tetapan | Tetapan',
         restartHelper: 'Perubahan konfigurasi memerlukan perkhidmatan Docker dimulakan semula untuk berkuat kuasa',
@@ -1969,7 +1969,7 @@ const message = {
         noLogs: 'Tiada keluaran tugas lagi...',
         errPath: 'Laluan sandaran [{0}] salah, tidak boleh dimuat turun!',
         cutWebsiteLog: 'Putaran log laman web',
-        cutWebsiteLogHelper: 'Fail log yang diputar akan disandarkan ke direktori sandaran 1Panel.',
+        cutWebsiteLogHelper: 'Fail log yang diputar akan disandarkan ke direktori sandaran NexaCP.',
         syncIpGroup: 'Segerakkan kumpulan IP WAF',
         syncIpGroupHelper: 'Segerakkan kumpulan IP jauh yang digunakan dalam senarai hitam/putih WAF',
         requestExpirationTime: 'Waktu luput permintaan muat naik (Jam)',
@@ -1999,7 +1999,7 @@ const message = {
             syncHelper: 'Akan menyelaraskan pustaka skrip sistem. Operasi ini hanya melibatkan skrip sistem. Teruskan?',
         },
         nextTime: '5 pelaksanaan seterusnya',
-        logHelper1: '1. Log sistem 1Panel',
+        logHelper1: '1. Log sistem NexaCP',
         backupContent: 'Kandungan sandaran',
         cronSpecRule2: 'Format tempoh pelaksanaan tidak betul, semak dan cuba lagi!',
         executor: 'Pelaksana',
@@ -2659,7 +2659,7 @@ const message = {
         previewTruncated: 'Fail terlalu besar, hanya menunjukkan bahagian terakhir',
         previewEmpty: 'Fail kosong atau bukan fail teks',
         previewLargeFile: 'Pratonton',
-        panelInstallDir: 'Direktori pemasangan 1Panel tidak boleh dipadamkan',
+        panelInstallDir: 'Direktori pemasangan NexaCP tidak boleh dipadamkan',
         wgetTask: 'Tugas Muat Turun',
         stopWgetConfirm: 'Adakah anda pasti mahu menghentikan tugas muat turun ini?',
         existFileTitle: 'Amaran fail dengan nama yang sama',
@@ -2880,7 +2880,7 @@ const message = {
         timeZoneChangeHelper:
             'Menukar zon waktu memerlukan memulakan semula perkhidmatan. Adakah anda mahu meneruskan?',
         timeZoneHelper:
-            'Pengubahan zon waktu bergantung pada perkhidmatan sistem timedatectl. Berkuat kuasa selepas mulakan semula perkhidmatan 1Panel.',
+            'Pengubahan zon waktu bergantung pada perkhidmatan sistem timedatectl. Berkuat kuasa selepas mulakan semula perkhidmatan NexaCP.',
         timeZoneCN: 'Beijing',
         timeZoneAM: 'Los Angeles',
         timeZoneNY: 'New York',
@@ -2986,7 +2986,7 @@ const message = {
             'Hanya permintaan daripada IP/CIDR ini akan mempercayai Forwarded dan X-Forwarded-Proto untuk menentukan HTTPS',
         passkeyNotSupported: 'Pelayar atau persekitaran semasa tidak menyokong passkey',
         passkeyPrereqTitle: 'Prasyarat berikut diperlukan untuk Passkey',
-        passkeyPrereqBindDomain: 'Pengikatan domain 1Panel dikonfigurasi',
+        passkeyPrereqBindDomain: 'Pengikatan domain NexaCP dikonfigurasi',
         passkeyPrereqHttps: 'Akses selamat melalui HTTPS',
         passkeyPrereqBrowser: 'Persekitaran menyokong Passkey (WebAuthn + pengesah platform)',
         passkeyPrereqBrowserDetailWebAuthnUnavailable:
@@ -3040,10 +3040,10 @@ const message = {
         panelSSL: 'Panel SSL',
         unBindDomainHelper:
             'Tindakan membuka ikatan nama domain boleh menyebabkan ketidakamanan sistem. Adakah anda mahu meneruskan?',
-        bindDomainHelper: 'Selepas anda mengikat domain, hanya domain itu yang boleh mengakses perkhidmatan 1Panel.',
+        bindDomainHelper: 'Selepas anda mengikat domain, hanya domain itu yang boleh mengakses perkhidmatan NexaCP.',
         bindDomainHelper1: 'Biarkan kosong untuk melumpuhkan ikatan nama domain.',
         bindDomainWarning:
-            'Selepas ikatan domain, anda akan log keluar dan hanya boleh mengakses perkhidmatan 1Panel melalui nama domain yang ditentukan dalam tetapan. Adakah anda mahu meneruskan?',
+            'Selepas ikatan domain, anda akan log keluar dan hanya boleh mengakses perkhidmatan NexaCP melalui nama domain yang ditentukan dalam tetapan. Adakah anda mahu meneruskan?',
         allowIPs: 'IP Dibenarkan',
         unAllowIPs: 'IP Tidak Dibenarkan',
         unAllowIPsWarning:
@@ -3059,7 +3059,7 @@ const message = {
         secret: 'Rahsia',
         mfaInterval: 'Selang penyegaran (saat)',
         mfaTitleHelper:
-            'Judul digunakan untuk membezakan hos 1Panel yang berbeza. Imbas lagi atau tambahkan kunci rahsia secara manual selepas anda mengubah judul.',
+            'Judul digunakan untuk membezakan hos NexaCP yang berbeza. Imbas lagi atau tambahkan kunci rahsia secara manual selepas anda mengubah judul.',
         mfaIntervalHelper:
             'Selepas mengubah selang penyegaran, imbas semula atau tambahkan kunci rahsia secara manual.\nSesetengah aplikasi pengesah hanya menyokong selang 30 saat (contohnya, Google/Microsoft Authenticator).',
         mfaAlert:
@@ -3146,14 +3146,14 @@ const message = {
         ignoreRule: 'Aturan abaikan',
         editIgnoreRule: 'Sunting aturan abaikan',
         ignoreHelper:
-            'Aturan ini akan digunakan untuk memampatkan dan menyandarkan direktori data 1Panel semasa membuat snapshot. Secara lalai, fail soket diabaikan.',
+            'Aturan ini akan digunakan untuk memampatkan dan menyandarkan direktori data NexaCP semasa membuat snapshot. Secara lalai, fail soket diabaikan.',
         ignoreHelper1: 'Satu per baris. Contoh,\n*.log\n/opt/1panel/cache',
-        panelInfo: 'Tulis maklumat asas 1Panel',
-        panelBin: 'Sandarkan fail sistem 1Panel',
+        panelInfo: 'Tulis maklumat asas NexaCP',
+        panelBin: 'Sandarkan fail sistem NexaCP',
         daemonJson: 'Sandarkan fail konfigurasi Docker',
-        appData: 'Sandarkan aplikasi yang dipasang dari 1Panel',
-        panelData: 'Sandarkan direktori data 1Panel',
-        backupData: 'Sandarkan direktori sandaran tempatan untuk 1Panel',
+        appData: 'Sandarkan aplikasi yang dipasang dari NexaCP',
+        panelData: 'Sandarkan direktori data NexaCP',
+        backupData: 'Sandarkan direktori sandaran tempatan untuk NexaCP',
         compress: 'Cipta fail snapshot',
         upload: 'Muat naik fail snapshot',
         recoverDetail: 'Butiran pemulihan',
@@ -3163,7 +3163,7 @@ const message = {
         recoverErrArch: 'Pemulihan snapshot antara seni bina pelayan yang berbeza tidak disokong!',
         recoverErrSize: 'Kekurangan ruang cakera dikesan, sila periksa atau bersihkan dan cuba lagi!',
         recoverHelper: 'Memulakan pemulihan dari snapshot {0}, sila sahkan maklumat berikut sebelum meneruskan:',
-        recoverHelper1: 'Pemulihan memerlukan mulakan semula perkhidmatan Docker dan 1Panel',
+        recoverHelper1: 'Pemulihan memerlukan mulakan semula perkhidmatan Docker dan NexaCP',
         recoverHelper2:
             'Pastikan terdapat ruang cakera yang mencukupi pada pelayan (Saiz fail snapshot: {0}, Ruang tersedia: {1})',
         recoverHelper3:
@@ -3172,8 +3172,8 @@ const message = {
             'Operasi ini hanya menggulung balik nod utama. Jika terdapat nod anak yang telah dinaik taraf, sila gulungkan balik nod anak terlebih dahulu sebelum meneruskan.',
         rollback: 'Pulangkan semula',
         rollbackHelper:
-            'Pulangkan semula pemulihan ini akan menggantikan semua fail dari pemulihan ini, dan mungkin memerlukan mulakan semula perkhidmatan Docker dan 1Panel. Adakah anda mahu meneruskan?',
-        upgradeHelper: 'Kemas kini memerlukan mulakan semula perkhidmatan 1Panel. Adakah anda mahu meneruskan?',
+            'Pulangkan semula pemulihan ini akan menggantikan semua fail dari pemulihan ini, dan mungkin memerlukan mulakan semula perkhidmatan Docker dan NexaCP. Adakah anda mahu meneruskan?',
+        upgradeHelper: 'Kemas kini memerlukan mulakan semula perkhidmatan NexaCP. Adakah anda mahu meneruskan?',
         rollbackLocalHelper:
             'Nod utama tidak menyokong rollback secara langsung. Sila laksanakan arahan [1pctl restore] secara manual untuk rollback!',
         noUpgrade: 'Ia adalah versi terbaru pada masa ini',
@@ -3273,7 +3273,7 @@ const message = {
         importLicense: 'Lesen',
         securityWarningTitle: 'Jangan gunakan lesen retak atau lesen daripada sumber yang tidak diketahui.',
         securityWarningContent:
-            '1Panel perlu dijalankan oleh pengguna dengan keistimewaan pentadbiran sistem. Lesen tidak rasmi atau versi yang diubah suai boleh menyebabkan pelayan hilang kawalan, kebocoran data dan risiko keselamatan serius lain. Dapatkan lesen dan pakej pemasangan hanya melalui saluran rasmi FIT2CLOUD.',
+            'NexaCP perlu dijalankan oleh pengguna dengan keistimewaan pentadbiran sistem. Lesen tidak rasmi atau versi yang diubah suai boleh menyebabkan pelayan hilang kawalan, kebocoran data dan risiko keselamatan serius lain. Dapatkan lesen dan pakej pemasangan hanya melalui saluran rasmi FIT2CLOUD.',
         importHelper: 'Sila klik atau seret fail lesen ke sini',
         licenseRequiredTip:
             'Lesen belum diimport. Salin ID peranti, dapatkan lesen dan importkannya sebelum anda boleh log masuk.',
@@ -3318,7 +3318,7 @@ const message = {
         monitor:
             'Naik taraf ke Edisi Komersial untuk melihat status laman web masa nyata, trend pelawat, sumber trafik, log permintaan dan lain-lain.',
         alert: 'Naik taraf ke Edisi Komersial untuk menerima amaran SMS dan melihat log amaran.',
-        node: 'Naik taraf ke Edisi Komersial untuk mengurus berbilang pelayan Linux dengan 1Panel.',
+        node: 'Naik taraf ke Edisi Komersial untuk mengurus berbilang pelayan Linux dengan NexaCP.',
         nodeApp:
             'Naik taraf ke Edisi Komersial untuk menaik taraf versi aplikasi berbilang nod tanpa menukar nod secara manual.',
         nodeDashboard:
@@ -3326,7 +3326,7 @@ const message = {
         fileExchange: 'Naik taraf ke Edisi Komersial untuk memindahkan fail dengan pantas antara pelayan.',
         app: 'Naik taraf ke Edisi Komersial untuk melihat maklumat perkhidmatan dan pemantauan anomali dalam aplikasi mudah alih.',
         cluster: 'Naik taraf ke Edisi Komersial untuk mengurus kelompok utama-replika MySQL/Postgres/Redis.',
-        vllm: 'Naik taraf ke Edisi Komersial untuk mengurus perkhidmatan vLLM secara berpusat dalam 1Panel, termasuk penggunaan, konfigurasi, operasi kitar hayat dan penjejakan tugas.',
+        vllm: 'Naik taraf ke Edisi Komersial untuk mengurus perkhidmatan vLLM secara berpusat dalam NexaCP, termasuk penggunaan, konfigurasi, operasi kitar hayat dan penjejakan tugas.',
         'model-downloader':
             'Naik taraf kepada edisi komersial untuk mencari, memuat turun dan mengurus fail model tempatan daripada HuggingFace, ModelScope atau cermin serasi, dengan direktori model dan tugasan muat turun berpusat.',
         exceptionalHelper:
@@ -3335,7 +3335,7 @@ const message = {
     },
     clean: {
         scan: 'Mulakan imbasan',
-        scanHelper: 'Bersihkan fail sampah dengan mudah yang dihasilkan semasa operasi 1Panel',
+        scanHelper: 'Bersihkan fail sampah dengan mudah yang dihasilkan semasa operasi NexaCP',
         clean: 'Bersihkan sekarang',
         reScan: 'Imbas semula',
         cleanHelper: 'Fail dan direktori terpilih tidak boleh dipulihkan selepas pembersihan. Teruskan?',
@@ -4077,7 +4077,7 @@ const message = {
         execShell: 'Jalankan skrip selepas permintaan pengesahan.',
         shell: 'Kandungan skrip',
         shellHelper:
-            'Direktori pelaksanaan lalai skrip adalah direktori pemasangan 1Panel. Jika sijil ditolak ke direktori tempatan, direktori pelaksanaan akan menjadi direktori tolak sijil. Tamat masa pelaksanaan lalai ialah 30 minit.',
+            'Direktori pelaksanaan lalai skrip adalah direktori pemasangan NexaCP. Jika sijil ditolak ke direktori tempatan, direktori pelaksanaan akan menjadi direktori tolak sijil. Tamat masa pelaksanaan lalai ialah 30 minit.',
         customAcme: 'Perkhidmatan ACME Tersuai',
         customAcmeURL: 'URL Perkhidmatan ACME',
         baiduCloud: 'Baidu Cloud',
@@ -4335,7 +4335,7 @@ const message = {
             dir: 'Direktori',
             numprocs: 'Bil. proses',
             initWarn:
-                'Ini akan mengubah nilai "files" dalam bahagian "[include]" dalam fail konfigurasi utama. Direktori fail konfigurasi lain akan menjadi: "{direktori pemasangan 1Panel}/1panel/tools/supervisord/supervisor.d/".',
+                'Ini akan mengubah nilai "files" dalam bahagian "[include]" dalam fail konfigurasi utama. Direktori fail konfigurasi lain akan menjadi: "{direktori pemasangan NexaCP}/1panel/tools/supervisord/supervisor.d/".',
             operatorHelper: 'Operasi {1} akan dilakukan pada {0}, teruskan?',
             uptime: 'Masa berjalan',
             notStartWarn: 'Supervisor belum dimulakan. Mulakan dahulu.',
@@ -5106,7 +5106,7 @@ const message = {
                     clientSecret: 'Client Secret',
                     clockSkew: 'Toleransi masa token',
                     clockSkewHelper:
-                        'Membenarkan sedikit perbezaan masa antara penyedia identiti dan 1Panel. Kekalkan nilai lalai 60 saat.',
+                        'Membenarkan sedikit perbezaan masa antara penyedia identiti dan NexaCP. Kekalkan nilai lalai 60 saat.',
                     clockSkewRequired: 'Masukkan toleransi masa token.',
                     compatibilityMode: 'Mod keserasian',
                     compatibilityModeHelper:
@@ -5223,13 +5223,13 @@ const message = {
                     nameClaimHelper: 'Masukkan medan yang mengandungi nama pengguna, seperti preferred_username.',
                     nameClaimRequired: 'Masukkan Claim nama pengguna.',
                     nameConflict: 'Nama dasar konflik',
-                    panelURL: '1Panel awam URL',
+                    panelURL: 'NexaCP awam URL',
                     panelURLHTTPWarning:
                         'HTTP tidak melindungi respons kebenaran. Gunakannya hanya dalam persekitaran peribadi terpencil yang diterima oleh Provider.',
                     panelURLHelper:
-                        'Masukkan alamat yang digunakan untuk mengakses 1Panel. Alamat ini digunakan untuk menjana URL panggil balik.',
+                        'Masukkan alamat yang digunakan untuk mengakses NexaCP. Alamat ini digunakan untuk menjana URL panggil balik.',
                     panelURLInvalid: 'Masukkan asal yang mengandungi hanya skema, hos dan port pilihan.',
-                    panelURLRequired: 'Masukkan 1Panel awam URL.',
+                    panelURLRequired: 'Masukkan NexaCP awam URL.',
                     pkceDisabled: 'Dilumpuhkan (keserasian sahaja)',
                     pkceDisabledWarning:
                         'Melumpuhkan PKCE mengurangkan perlindungan terhadap pemintasan kod kebenaran.',
@@ -5289,7 +5289,7 @@ const message = {
                     signingKeyStatic: 'Kunci awam JWK atau PEM statik',
                     standardDiscovery: 'Discovery OIDC standard',
                     standardDiscoveryDesc:
-                        '1Panel menemui titik akhir dan keupayaan dan tidak menyimpan dokumen mentah.',
+                        'NexaCP menemui titik akhir dan keupayaan dan tidak menyimpan dokumen mentah.',
                     standardMode: 'Mod standard',
                     standardModeHelper:
                         'Temui titik akhir, keupayaan menandatangani dan sokongan PKCE daripada Issuer.',
@@ -5410,7 +5410,7 @@ const message = {
                     metadataXMLPlaceholder: 'Tampal <EntityDescriptor>...</EntityDescriptor>',
                     nameAttribute: 'Atribut nama pengguna',
                     nameAttributeHelper:
-                        'Membaca atribut ini daripada SAML Assertion yang disahkan dan memetakannya kepada nama pengguna 1Panel.',
+                        'Membaca atribut ini daripada SAML Assertion yang disahkan dan memetakannya kepada nama pengguna NexaCP.',
                     nameAttributePlaceholder: 'Contohnya: uid, username atau account',
                     nameAttributeRequired: 'Masukkan atribut nama pengguna.',
                     notConfigured: 'Belum dikonfigurasi',
@@ -5445,7 +5445,7 @@ const message = {
                         'Digunakan untuk menandatangani AuthnRequest dan mesej log keluar. Ia disulitkan semasa disimpan dan tidak pernah dipaparkan.',
                     syncLogout: 'Log keluar segerak',
                     syncLogoutHelper:
-                        'Log keluar daripada 1Panel atau penyedia identiti turut melog keluar bahagian yang lain.',
+                        'Log keluar daripada NexaCP atau penyedia identiti turut melog keluar bahagian yang lain.',
                     testBeforeBrowserTest: 'Uji konfigurasi semasa sebelum memulakan ujian log masuk penyemak imbas.',
                     testBeforeEnable: 'Uji konfigurasi semasa sebelum mendayakan atau menyimpan perubahan sensitif.',
                     testConfiguration: 'Uji konfigurasi',
@@ -5476,14 +5476,14 @@ const message = {
                     passwordSaved: 'Biarkan kosong untuk menyimpan kata laluan yang disimpan',
                     userSearch: 'Carian pengguna',
                     userSearchDesc:
-                        'Tetapkan pangkalan carian dan penapis pengguna, kemudian petakan atribut LDAP yang digunakan sebagai 1Panel name.',
+                        'Tetapkan pangkalan carian dan penapis pengguna, kemudian petakan atribut LDAP yang digunakan sebagai NexaCP name.',
                     userFilter: 'Penapis pengguna',
                     userFilterTooltip:
                         'Gantikan %(user)s dengan nama pengguna yang dilepaskan, atau dengan * untuk membaca direktori penuh.',
                     userFilterHelper: 'Nama pengguna dikeluarkan sebelum ia dimasukkan ke dalam penapis LDAP.',
                     attributeMap: 'Pemetaan atribut',
-                    attributeMapTooltip: 'Pemetaan JSON daripada medan 1Panel name kepada atribut LDAP.',
-                    attributeMapHelper: 'Tetapkan atribut LDAP yang dipetakan ke medan 1Panel name.',
+                    attributeMapTooltip: 'Pemetaan JSON daripada medan NexaCP name kepada atribut LDAP.',
+                    attributeMapHelper: 'Tetapkan atribut LDAP yang dipetakan ke medan NexaCP name.',
                     advanced: 'Tetapan lanjutan',
                     advancedDesc: 'Konfigurasikan halaman pertanyaan TLS dan LDAP.',
                     strictSync: 'Penyegerakan yang ketat',
@@ -5523,7 +5523,7 @@ const message = {
                     sync: {
                         title: 'Penyegerakan berjadual',
                         description:
-                            'Baca direktori LDAP penuh mengikut jadual dan kekalkan pengguna LDAP yang diimport dalam 1Panel.',
+                            'Baca direktori LDAP penuh mengikut jadual dan kekalkan pengguna LDAP yang diimport dalam NexaCP.',
                         enable: 'Dayakan jadual',
                         enableHelper:
                             'Apabila dilumpuhkan, pelaksanaan automatik berhenti; penyegerakan manual masih tersedia.',
@@ -5582,7 +5582,7 @@ const message = {
                     },
                     testLoginTitle: 'Uji log masuk AD/LDAP',
                     testLoginDesc:
-                        'Ikat dengan bukti kelayakan pengguna AD/LDAP untuk menguji pengesahan sahaja. Tiada sesi 1Panel dibuat.',
+                        'Ikat dengan bukti kelayakan pengguna AD/LDAP untuk menguji pengesahan sahaja. Tiada sesi NexaCP dibuat.',
                     ldapUsername: 'Nama pengguna LDAP',
                     usernameRequired: 'Masukkan nama pengguna LDAP.',
                     startTest: 'Mulakan ujian',
@@ -6175,7 +6175,7 @@ const message = {
             tamperContent4:
                 'Rekod log akses dan operasi fail untuk audit dan analisis selanjutnya oleh pentadbir serta mengenal pasti potensi ancaman keselamatan.',
             settingTitle1: 'Mesej Selamat Datang Tersuai',
-            settingContent1: 'Tetapkan mesej selamat datang tersuai pada halaman log masuk 1Panel.',
+            settingContent1: 'Tetapkan mesej selamat datang tersuai pada halaman log masuk NexaCP.',
             settingTitle2: 'Logo Tersuai',
             settingContent2: 'Benarkan memuat naik gambar logo yang mengandungi nama jenama atau teks lain.',
             settingTitle3: 'Ikon Laman Web Tersuai',
@@ -6231,7 +6231,7 @@ const message = {
             nodeAppTitle1: 'Pengurusan Naik Taraf Aplikasi',
             nodeAppContent1: 'Pemantauan bersatu kemas kini aplikasi berbilang nod, menyokong naik taraf satu klik',
             appTitle1: 'Pengurusan Panel yang Fleksibel',
-            appContent1: 'Uruskan pelayan 1Panel anda dengan mudah pada bila-bila masa dan di mana sahaja.',
+            appContent1: 'Uruskan pelayan NexaCP anda dengan mudah pada bila-bila masa dan di mana sahaja.',
             appTitle2: 'Maklumat Perkhidmatan Komprehensif',
             appContent2:
                 'Uruskan aplikasi, laman web, Docker, pangkalan data, dll melalui aplikasi mudah alih dan sokong pembinaan pantas aplikasi dan laman web.',
@@ -6261,7 +6261,7 @@ const message = {
                 'Urus direktori model tempatan di satu tempat, termasuk laluan, saiz, masa dan pemadaman fail model yang tidak digunakan.',
             vllmTitle1: 'Pengurusan Berpusat',
             vllmContent1:
-                'Integrasikan instans vLLM yang diedarkan ke dalam 1Panel dan pantau versi, status operasi serta direktori kerja secara berpusat.',
+                'Integrasikan instans vLLM yang diedarkan ke dalam NexaCP dan pantau versi, status operasi serta direktori kerja secara berpusat.',
             vllmTitle2: 'Penerapan Pantas',
             vllmContent2:
                 'Gunakan borang visual untuk memilih versi, memasang direktori model dan mengkonfigurasi parameter permulaan, sekali gus mengurangkan kerumitan konfigurasi manual.',
@@ -6322,7 +6322,7 @@ const message = {
             addPanel: 'Tambah Panel',
             addPanelHelper:
                 'Selepas berjaya menambah panel, anda boleh mengakses panel sasaran dengan pantas di [Gambaran Keseluruhan - Panel].',
-            panel: 'Panel 1Panel',
+            panel: 'Panel NexaCP',
             others: 'Panel Lain',
             addNode: 'Tambah Nod',
             connInfo: 'Maklumat Sambungan',
@@ -6360,7 +6360,7 @@ const message = {
             checkService: 'Periksa maklumat perkhidmatan sedia ada pada nod',
             checkPort: 'Periksa kebolehcapaian port nod',
             panelExist:
-                'Mengesan nod ini sedang menjalankan perkhidmatan 1Panel V1. Sila naik taraf ke V2 menggunakan skrip migrasi sebelum menambah.',
+                'Mengesan nod ini sedang menjalankan perkhidmatan NexaCP V1. Sila naik taraf ke V2 menggunakan skrip migrasi sebelum menambah.',
             coreExist:
                 'Nod semasa telah didayakan sebagai nod induk dan tidak boleh ditambah terus sebagai nod hamba. Sila turun taraf kepada nod hamba terlebih dahulu sebelum menambah, rujuk dokumentasi untuk butiran.',
             agentExist:
@@ -6368,7 +6368,7 @@ const message = {
             agentNotExist:
                 'Terdapat pengesahan bahawa 1panel-agent tidak dipasang pada nod ini, maklumat nod tidak boleh disunting secara langsung. Sila padam dan tambah semula.',
             oldDataExist:
-                'Mengesan data sejarah 1Panel V2 pada nod ini. Maklumat berikut akan digunakan untuk menimpa tetapan semasa:',
+                'Mengesan data sejarah NexaCP V2 pada nod ini. Maklumat berikut akan digunakan untuk menimpa tetapan semasa:',
             errLicense: 'Lesen yang terikat pada nod ini tidak tersedia. Sila semak dan cuba lagi!',
             errNodePort:
                 'Port nod [ {0} ] dikesan tidak boleh diakses. Sila semak sama ada firewall atau kumpulan keselamatan telah membenarkan port ini.',
@@ -6390,7 +6390,7 @@ const message = {
             forceDeleteHelper:
                 'Hapus secara paksa akan mengabaikan ralat penghapusan nod dan menghapus metadata pangkalan data',
             uninstall: 'Padam data nod',
-            uninstallHelper: 'Ini akan memadamkan semua data berkaitan 1Panel bagi nod. Pilih dengan berhati-hati!',
+            uninstallHelper: 'Ini akan memadamkan semua data berkaitan NexaCP bagi nod. Pilih dengan berhati-hati!',
             baseDir: 'Direktori Pemasangan',
             baseDirHelper: 'Apabila direktori pemasangan kosong, secara lalai akan dipasang di direktori /opt',
             nodePort: 'Port Nod',

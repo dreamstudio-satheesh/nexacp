@@ -22,7 +22,7 @@
                         v-show="imgLoaded"
                         :src="loadImage('loginImage')"
                         class="max-w-full max-h-full object-cover bg-cover bg-center"
-                        alt="1panel"
+                        alt="nexacp"
                         @load="onImgLoad"
                         @error="onImgError"
                     />
@@ -210,7 +210,7 @@ const loadImage = (name: string) => {
 };
 
 const applyLoginThemeColor = () => {
-    const loginBtnLinkColor = themeConfig.value.loginBtnLinkColor || '#005eeb';
+    const loginBtnLinkColor = themeConfig.value.loginBtnLinkColor || '#4F46E5';
     document.documentElement.style.setProperty('--login-btn-link-color', loginBtnLinkColor);
     document.documentElement.style.setProperty(
         '--login-btn-link-hover-color',
@@ -482,10 +482,10 @@ onUnmounted(() => {
     top: 16px;
     right: 20px;
     z-index: 1;
-    color: var(--login-btn-link-color, #005eeb);
+    color: var(--login-btn-link-color, #4F46E5);
 
     &:hover {
-        color: var(--login-btn-link-hover-color, #0054d3);
+        color: var(--login-btn-link-hover-color, #4338CA);
     }
 }
 
@@ -514,13 +514,13 @@ onUnmounted(() => {
     }
 
     .login-button {
-        background-color: var(--login-btn-link-color, #005eeb);
-        border-color: var(--login-btn-link-color, #005eeb);
+        background-color: var(--login-btn-link-color, #4F46E5);
+        border-color: var(--login-btn-link-color, #4F46E5);
         color: #ffffff;
 
         &:hover {
-            background-color: var(--login-btn-link-hover-color, #0054d3) !important;
-            border-color: var(--login-btn-link-hover-color, #0054d3) !important;
+            background-color: var(--login-btn-link-hover-color, #4338CA) !important;
+            border-color: var(--login-btn-link-hover-color, #4338CA) !important;
             outline: none !important;
         }
     }
@@ -571,10 +571,10 @@ onUnmounted(() => {
         width: 80px;
         height: 20px;
         padding: 0;
-        color: var(--login-btn-link-color, #005eeb);
+        color: var(--login-btn-link-color, #4F46E5);
 
         &:hover {
-            color: var(--login-btn-link-hover-color, #0054d3);
+            color: var(--login-btn-link-hover-color, #4338CA);
         }
     }
 }
@@ -645,7 +645,7 @@ onUnmounted(() => {
     }
 
     &::after {
-        border-color: var(--login-btn-link-color, #005eeb) transparent transparent;
+        border-color: var(--login-btn-link-color, #4F46E5) transparent transparent;
         animation: restore-spin 0.9s linear infinite;
     }
 
@@ -653,8 +653,8 @@ onUnmounted(() => {
         position: absolute;
         inset: 19px;
         border-radius: 50%;
-        background: var(--login-btn-link-color, #005eeb);
-        box-shadow: 0 0 0 6px color-mix(in srgb, var(--login-btn-link-color, #005eeb) 10%, transparent);
+        background: var(--login-btn-link-color, #4F46E5);
+        box-shadow: 0 0 0 6px color-mix(in srgb, var(--login-btn-link-color, #4F46E5) 10%, transparent);
         animation: restore-pulse 1.5s ease-in-out infinite;
     }
 }
