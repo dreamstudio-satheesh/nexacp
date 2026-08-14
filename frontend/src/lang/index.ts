@@ -7,23 +7,13 @@ const DEFAULT_LOCALE = 'en';
 const STORAGE_KEY = 'lang';
 
 const LOCALE_LOADERS: Record<string, LocaleLoader> = {
-    zh: () => import('./modules/zh'),
-    'zh-Hant': () => import('./modules/zh-Hant'),
     en: () => import('./modules/en'),
-    'pt-BR': () => import('./modules/pt-br'),
-    ja: () => import('./modules/ja'),
-    ru: () => import('./modules/ru'),
-    ms: () => import('./modules/ms'),
-    ko: () => import('./modules/ko'),
-    lo: () => import('./modules/lo'),
-    tr: () => import('./modules/tr'),
-    fa: () => import('./modules/fa'),
-    'es-ES': () => import('./modules/es-es'),
 };
 
 const getStoredLocale = () => {
     if (typeof window === 'undefined') return DEFAULT_LOCALE;
-    return localStorage.getItem(STORAGE_KEY) || DEFAULT_LOCALE;
+    const stored = localStorage.getItem(STORAGE_KEY);
+    return LOCALE_LOADERS[stored || ''] ? stored! : DEFAULT_LOCALE;
 };
 
 const initialLocale = getStoredLocale();

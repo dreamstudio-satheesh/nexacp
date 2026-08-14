@@ -7,7 +7,7 @@ const message = {
         colon: ': ',
         example: 'e.g., ',
         fit2cloud: 'FIT2CLOUD',
-        lingxia: 'LXware',
+        lingxia: 'NexaCP',
         button: {
             run: 'Run',
             prev: 'Previous',

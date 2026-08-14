@@ -74,12 +74,9 @@
                         </template>
                     </el-table-column>
                     <el-table-column :label="$t('commons.table.user')" prop="user" show-overflow-tooltip />
-                    <el-table-column :label="$t('commons.table.operate')" min-width="150px" prop="detailZH">
+                    <el-table-column :label="$t('commons.table.operate')" min-width="150px" prop="detailEN">
                         <template #default="{ row }">
-                            <span v-if="language === 'zh' || language === 'zh-Hant'">
-                                {{ row.detailZH }}
-                            </span>
-                            <span v-if="language === 'en'">{{ row.detailEN }}</span>
+                            <span>{{ row.detailEN }}</span>
                         </template>
                     </el-table-column>
                     <el-table-column v-if="isXpackOrEE" :label="$t('xpack.node.node')" prop="node">
@@ -132,7 +129,7 @@ const searchStatus = ref<string>('');
 const searchNode = ref<string>('');
 const nodes = ref();
 
-const { globalStore, currentNode, isAdmin, isXpackOrEE, language } = useGlobalStore();
+const { globalStore, currentNode, isAdmin, isXpackOrEE } = useGlobalStore();
 
 const search = async () => {
     let params = {

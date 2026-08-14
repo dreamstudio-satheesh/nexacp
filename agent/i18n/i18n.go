@@ -14,18 +14,7 @@ import (
 )
 
 var langFiles = map[string]string{
-	"zh":      "lang/zh.yaml",
-	"en":      "lang/en.yaml",
-	"zh-Hant": "lang/zh-Hant.yaml",
-	"pt-BR":   "lang/pt-BR.yaml",
-	"ja":      "lang/ja.yaml",
-	"ru":      "lang/ru.yaml",
-	"ms":      "lang/ms.yaml",
-	"ko":      "lang/ko.yaml",
-	"lo":      "lang/lo.yaml",
-	"tr":      "lang/tr.yaml",
-	"es-ES":   "lang/es-ES.yaml",
-	"fa":   "lang/fa.yaml",
+	"en": "lang/en.yaml",
 }
 
 func GetMsgWithMap(key string, maps map[string]interface{}) string {
@@ -134,18 +123,25 @@ func GetWithNameAndErr(key string, name string, err error) string {
 var fs embed.FS
 var bundle *i18n.Bundle
 
+func normalizeLang(lang string) string {
+	if lang != "en" {
+		return "en"
+	}
+	return lang
+}
+
 func UseI18n() gin.HandlerFunc {
 	return func(context *gin.Context) {
 		lang := context.GetHeader("Accept-Language")
 		if lang == "" {
 			lang = GetLanguageFromDB()
 		}
-		global.I18n = i18n.NewLocalizer(bundle, lang)
+		global.I18n = i18n.NewLocalizer(bundle, normalizeLang(lang))
 	}
 }
 
 func Init() {
-	bundle = i18n.NewBundle(language.Chinese)
+	bundle = i18n.NewBundle(language.English)
 	bundle.RegisterUnmarshalFunc("yaml", yaml.Unmarshal)
 	isSuccess := true
 	for _, file := range langFiles {
@@ -159,7 +155,7 @@ func Init() {
 		panic("[i18n] failed to init language files, See log above for details")
 	}
 	lang := GetLanguageFromDB()
-	global.I18n = i18n.NewLocalizer(bundle, lang)
+	global.I18n = i18n.NewLocalizer(bundle, normalizeLang(lang))
 }
 
 func newLocalizer(lang string) *i18n.Localizer {
@@ -170,7 +166,7 @@ func newLocalizer(lang string) *i18n.Localizer {
 		}
 		lang = GetLanguageFromDB()
 	}
-	return i18n.NewLocalizer(bundle, lang)
+	return i18n.NewLocalizer(bundle, normalizeLang(lang))
 }
 
 func GetLanguageFromDB() string {
@@ -181,5 +177,5 @@ func GetLanguageFromDB() string {
 	if lang == "" {
 		return "en"
 	}
-	return lang
+	return normalizeLang(lang)
 }

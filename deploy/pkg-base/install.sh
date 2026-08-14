@@ -14,27 +14,7 @@ CURRENT_DIR=$(
 LANG_FILE=".selected_language"
 EDITION_FILE=".selected_edition"
 LANG_DIR="$CURRENT_DIR/lang"
-AVAILABLE_LANGS=("en" "zh" "fa" "pt-BR" "ru")
-
-function lang_name() {
-    case "$1" in
-        en)
-            echo "English"
-            ;;
-        zh)
-            echo "Chinese  中文(简体)"
-            ;;
-        fa)
-            echo "Persian"
-            ;;
-        pt-BR)
-            echo "Português (Brasil)"
-            ;;
-        ru)
-            echo "Русский"
-            ;;
-    esac
-}
+AVAILABLE_LANGS=("en")
 
 NON_INTERACTIVE=false
 CONFIG_LANG="${PANEL_LANG:-}"
@@ -54,7 +34,7 @@ Usage: bash install.sh [options]
 
 Options:
   --non-interactive, -y             Use defaults for prompts that are not configured.
-  --lang <lang>                     Set language: en, zh, fa, pt-BR, ru.
+  --lang <lang>                     Set language: en.
   --install-dir <path>              Set installation directory.
   --port <port>                     Set panel port.
   --entrance <entrance>             Set panel secure entrance.
@@ -69,7 +49,7 @@ Options:
 
 Environment variables:
   PANEL_NON_INTERACTIVE          Use defaults for prompts that are not configured.
-  PANEL_LANG                     Set language: en, zh, fa, pt-BR, ru.
+  PANEL_LANG                     Set language: en.
   PANEL_INSTALL_DIR              Set installation directory.
   PANEL_PORT                     Set panel port.
   PANEL_ENTRANCE                 Set panel secure entrance.
@@ -235,36 +215,8 @@ function init_language() {
         fi
     fi
 
-    if [[ "$NON_INTERACTIVE" == true ]]; then
-        if [[ "$selected_edition" == "cn" ]]; then
-            selected_lang="zh"
-        else
-            selected_lang="en"
-        fi
-        echo "$selected_lang" > "$CURRENT_DIR/$LANG_FILE"
-        return
-    fi
-
-    echo "en" > "$CURRENT_DIR/$LANG_FILE"
-    source "$LANG_DIR/en.sh"
-
-    echo "$TXT_LANG_PROMPT_MSG"
-    for i in "${!AVAILABLE_LANGS[@]}"; do
-        lang_code="${AVAILABLE_LANGS[i]}"
-        echo "$((i + 1)). $(lang_name "$lang_code")"
-    done
-
-    read -p "$TXT_LANG_CHOICE_MSG" lang_choice
-
-    if [[ $lang_choice -ge 1 && $lang_choice -le ${#AVAILABLE_LANGS[@]} ]]; then
-        selected_lang=${AVAILABLE_LANGS[$((lang_choice - 1))]}
-        echo "$TXT_LANG_SELECTED_CONFIRM_MSG $(lang_name "$selected_lang")"
-        echo "$selected_lang" > "$CURRENT_DIR/$LANG_FILE"
-    else
-        echo "$TXT_LANG_INVALID_MSG"
-        selected_lang="en"
-        echo "$selected_lang" > "$CURRENT_DIR/$LANG_FILE"
-    fi
+    selected_lang="en"
+    echo "$selected_lang" > "$CURRENT_DIR/$LANG_FILE"
 }
 
 if [ -f "$CURRENT_DIR/$EDITION_FILE" ]; then

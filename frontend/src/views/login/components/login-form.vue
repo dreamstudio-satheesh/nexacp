@@ -52,18 +52,7 @@
                             </span>
                             <template #dropdown>
                                 <el-dropdown-menu>
-                                    <el-dropdown-item v-if="isIntl" command="en">English</el-dropdown-item>
-                                    <el-dropdown-item command="zh">中文(简体)</el-dropdown-item>
-                                    <el-dropdown-item command="zh-Hant">中文(繁體)</el-dropdown-item>
-                                    <el-dropdown-item v-if="!isIntl" command="en">English</el-dropdown-item>
-                                    <el-dropdown-item command="ja">日本語</el-dropdown-item>
-                                    <el-dropdown-item command="pt-BR">Português (Brasil)</el-dropdown-item>
-                                    <el-dropdown-item command="ko">한국어</el-dropdown-item>
-                                    <el-dropdown-item command="ru">Русский</el-dropdown-item>
-                                    <el-dropdown-item command="ms">Bahasa Melayu</el-dropdown-item>
-                                    <el-dropdown-item command="tr">Turkish</el-dropdown-item>
-                                    <el-dropdown-item command="fa">فارسی</el-dropdown-item>
-                                    <el-dropdown-item command="lo">ພາສາລາວ</el-dropdown-item>
+                                    <el-dropdown-item command="en">English</el-dropdown-item>
                                 </el-dropdown-menu>
                             </template>
                         </el-dropdown>
@@ -178,18 +167,7 @@
                             </span>
                             <template #dropdown>
                                 <el-dropdown-menu>
-                                    <el-dropdown-item v-if="isIntl" command="en">English</el-dropdown-item>
-                                    <el-dropdown-item command="zh">中文(简体)</el-dropdown-item>
-                                    <el-dropdown-item command="zh-Hant">中文(繁體)</el-dropdown-item>
-                                    <el-dropdown-item v-if="!isIntl" command="en">English</el-dropdown-item>
-                                    <el-dropdown-item command="ja">日本語</el-dropdown-item>
-                                    <el-dropdown-item command="pt-BR">Português (Brasil)</el-dropdown-item>
-                                    <el-dropdown-item command="ko">한국어</el-dropdown-item>
-                                    <el-dropdown-item command="ru">Русский</el-dropdown-item>
-                                    <el-dropdown-item command="ms">Bahasa Melayu</el-dropdown-item>
-                                    <el-dropdown-item command="tr">Turkish</el-dropdown-item>
-                                    <el-dropdown-item command="fa">فارسی</el-dropdown-item>
-                                    <el-dropdown-item command="lo">ພາສາລາວ</el-dropdown-item>
+                                    <el-dropdown-item command="en">English</el-dropdown-item>
                                 </el-dropdown-menu>
                             </template>
                         </el-dropdown>
@@ -453,7 +431,7 @@ const loginForm = reactive({
     captchaID: '',
     authMethod: 'session',
     agreeLicense: false,
-    language: 'zh',
+    language: 'en',
 });
 
 const loginRules = reactive({
@@ -501,7 +479,7 @@ const captcha = reactive({
 
 const loading = ref<boolean>(false);
 const mfaShow = ref<boolean>(false);
-const dropdownText = ref('中文(简体)');
+const dropdownText = ref('English');
 
 const isAutoPasskeyEnabled = () => {
     try {
@@ -522,24 +500,13 @@ const disableAutoPasskey = () => {
 };
 
 const languageLabelMap: Record<string, string> = {
-    zh: '中文(简体)',
     en: 'English',
-    'pt-BR': 'Português (Brasil)',
-    'zh-Hant': '中文(繁體)',
-    ko: '한국어',
-    ja: '日本語',
-    ru: 'Русский',
-    ms: 'Bahasa Melayu',
-    tr: 'Turkish',
-    'es-ES': 'España - Español',
-    fa: 'فارسی',
-    lo: 'ພາສາລາວ',
 };
 
 const handleCommand = async (command: string) => {
     const activeLocale = await globalStore.updateLanguage(command);
     loginForm.language = activeLocale;
-    dropdownText.value = languageLabelMap[activeLocale] || languageLabelMap.zh;
+    dropdownText.value = languageLabelMap[activeLocale] || languageLabelMap.en;
 };
 
 const agreeWithLogin = () => {
